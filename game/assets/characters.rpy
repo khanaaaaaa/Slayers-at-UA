@@ -1,8 +1,9 @@
 # Characters
 #kny
-define mui = Character("Muichiro")
+define mui = Character("Muichiro Tokito")
 define yn = Character("[player_name]")
-
+define muis = Character("Muichiro Tokito")
+define yuichiro = Character("Yuichiro Tokito")
 define thought = Character(None, what_italic=True)
 
 #random-kny

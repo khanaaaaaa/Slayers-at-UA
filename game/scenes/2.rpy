@@ -1,6 +1,7 @@
 label mission_scene:
     scene bg forest_night
-    with fadeplay sound "wind.wav"
+    play sound "wind.wav"
+    with fade
     thought "We trained here."
     thought "Back when he still laughed."
     "Moon Breathing, Third Form... Lunar Rings."
@@ -36,7 +37,7 @@ label mission_scene:
     $ player_name = player_name.strip()
     if player_name = "":
         $ player_name = "Y/N"
-    $ p = Character("[player_name], color="#ffffff")
+    $ p = Character("[player_name]", color="#ffffff")
     p "...It's [player_name]."
     mui "Right."
     mui "You used to hate when I forgot it."
@@ -45,8 +46,8 @@ label mission_scene:
     mui "People change."
     thought "That wasn't an answer."
     p "You used to call me 'sparrow'."
-    mui: "..I don't remember that."
-    (thought pauses)
+    mui "..I don't remember that."
+    pause
     mui "...I don't remember a lot of things."
 
     play sound "rumble.wav"
