@@ -3,7 +3,10 @@
 define mui = Character("Muichiro")
 define yn = Character("[player_name]")
 
+define thought = Character(None, what_italic=True)
+
 #random-kny
+define crowyn = Character("Crow")
 define demon1 = Character("Demon")
 define demon2 = Character("Demon")
 
@@ -29,3 +32,7 @@ define bakugo = Character("Bakugo Katsuki")
 define izuku = Character("Izuku Midoriya")
 define mineta = Character("Minoru Mineta")
 define momo = Character("Momo Yaoyorozu")
+
+#teachers
+define aizawa = Character("Shota Aizawa")
+define nezu = Character("Principal Nezu")
