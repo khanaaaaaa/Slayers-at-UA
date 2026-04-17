@@ -19,14 +19,13 @@ label prologue_start:
 
     pause
 
-    scene bg forest_sunset
-    with dissolve
+    scene bg forest_sunset at bg_fit
 
     play music "memory_theme.mp3"
 
     thought "It leaks in… like mist through broken wood."
 
-    show mui at left
+    show muis at left 
     show yuichiro at right
 
     yuichiro "You swing your blade like you're trying to forget something."
@@ -37,7 +36,7 @@ label prologue_start:
 
     menu:
         "Step between them":
-            p_child "He's getting better."
+            "He's getting better."
             yuichiro "You always say that."
         "Stay where you are":
             thought "I remember this argument..."
@@ -66,7 +65,6 @@ label prologue_start:
     pause
 
     scene black
-    with fade
 
     thought "Yuichiro Tokito."
     thought "Muichiro's older brother."
@@ -122,6 +120,5 @@ label prologue_start:
     thought "Please don't remember me..."
 
     scene black
-    with fade
 
     jump mission_scene
