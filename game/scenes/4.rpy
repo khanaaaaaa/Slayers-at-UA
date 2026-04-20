@@ -1,5 +1,5 @@
 label rooftop_scene:
-    scene bg rooftop_scene
+    scene bg rooftop_scene at bg_fit
     with fade
     play music "night_calm.mp3"
     p "..Do you remember anything?"

@@ -3,194 +3,518 @@ label prologue_start:
     scene black
     with memory_fade
     play sound "wind_soft.wav"
-    thought "...Red."
-    thought "A trace."
+
+    thought "There is someone whom I know everything about."
+
     pause 0.5
-    thought "Something left behind."
+
+    thought "But they don't remember me.."
+
+    thought "...which feels insulting."
+
     pause
-    scene bg forest_sunset at bg_fit, drift
+
+    scene bg forest_sunset at bg_fit
     with slow_dissolve
     play music "memory_theme.mp3"
-    thought "It doesn't return."
-    thought "It lingers."
+
+    pause 1.0
+
     show muiquiet at left_char
-    show yuichiroquiet at right_char
-    pause 0.5
-    hide yuichiroquiet
-    show yuichirotalking at right_char with dissolve
-    yuichiro "Your blade is wavering."
-    yuichiro "You're looking somewhere else."
-    hide yuichirotalking
-    show yuichiroquiet at right_char 
+    show youngynquiet at right_char
+
+    pause 0.8
+
     mui "..."
-    pause 0.4
+
+    pause 0.5
+
     hide muiquiet
-    show muitalking at left_char with dissolve
-    mui "It's the wind."
+    show muitalking at left_char
+
+    mui "You came again."
+    pause 0.5
+
+    hide muiquiet
+    show muitalking at left_char
+
+    mui "...Don't people usually say their names?"
+
     hide muitalking
     show muiquiet at left_char
-    hide yuichiroquiet
-    show yuichirotalking at right_char 
-    yuichiro "Wind doesn't hesitate."
-    pause 0.5
-    yuichiro "...People do."
-    hide yuichirotalking
-    show yuichiroquiet at right_char
+    show youngynquiet at right_char
     pause
-    show screen flash_overlay
-    with flash_white
-    "That's enough."
-    yuichiro "Move."
-    hide flash_white
 
-    pause 0.5
+    hide youngynquiet at right_char
+    show youngyntalkingg at right_char
 
-    hide yuichiroquiet
-    show yuichirotalking at right_char with dissolve
+    "Usually."
 
-    yuichiro "If you keep drifting..."
-
-    yuichiro "...you'll disappear."
-
-    hide yuichirotalking
-    show yuichiroquiet at right_char with dissolve
+    hide youngyntalkingg
+    show youngynquiett at right_char
 
     pause 0.3
 
-    hide muiquiet
-    show muitalking at left_char with dissolve
+    hide youngynquiett
+    show youngyntalkingg at right_char
 
-    mui "Then I disappear."
+    "Do you want to know mine?"
+    hide youngyntalkingg  
+    show youngynquiett at right_char with slow_dissolve
+
+    pause
+
+    hide muiquiet
+    show muitalking at left_char with slow_dissolve
+    
+    mui "I don't know."
+    mui "...You come here a lot."
+    hide muitalking
+    show muiquiet at left_char with slow_dissolve
+    pause
+    hide muiquiet
+    show muitalking at left_char
+    mui "It feels strange not calling you anything."
+
+    hide muitalking
+    show muiquiet at left_char
+
+    pause 0.8
+
+    "...Then what would you call me?"
+
+    pause
+
+    hide muiquiet
+    show muitalking at left_char
+
+    mui "...I haven't decided yet."
+    mui "Something that fits."
+    hide muitalking
+    show muiquiet at left_char
+
+    pause
+    hide youngynquiet
+    show youngyntalkingg at right_char
+
+    "That sounds like a lot of pressure."
+    hide youngyntalkingg
+    show youngynquiett at right_char
+
+    pause
+    hide muiquiet
+    show muitalking at right_char
+
+    mui "...You'll probably disappear before I figure it out anyway."
+    hide muitalking
+    show muiquiet at left_char
+
+    pause 1.0
+    hide younynquiett
+    show youngyntalkingg at right_char
+
+    "Then maybe you should hurry."
+    hide youngyntalkingg
+
+    pause
+
+    mui "..."
+
+    pause 0.5
+    hide muiquiet
+    show muitalking at left_char
+
+    mui "...Then tell me."
+
+    hide muitalking
+    show muiquiet at left_char
+
+    define e = Character("[player_name]")
+
+    default player_name = "Player"
+    $ player_name = renpy.input("What is your name?")
+    $ player_bame = player_name.strip()
+
+    if player_name == "":
+        $ player_name = "Player"
+
+
+    hide muiquiet 
+    show muitalking at left_char
+
+    mui "...[player_name]."
+
+    pause
+
+    mui "I'll remember it."
+
+    pause 0.6
+
+    pause 0.4
+
+    mui "...Why do you always stand in the same place?"
+
+    yn "Why you always pretend not to look?"
+    pause
 
     hide muitalking
     show muiquiet
+
+    pause 0.8
+
+    mui "...You're not from here."
+
+    yn "No."
+
+    pause 0.3
+
+    yn "But neither are you."
+
+    pause
+
+    hide muiquiet
+    show muitalking
+
+    mui "...What does that mean?"
+
+    pause
+
+    yn "It means..."
+
+    pause 0.5
+
+    yn "You shouldn't be this calm."
+
+    yn "Not with demons this close."
+
+    pause
+
+    mui "...Demons?"
+
+    pause 0.4
+
+    mui "You're the second person to say that."
+
+    pause
+
+    yn "Second?"
+
+    pause
+
+    hide muitalking
+    show muiquiet
+
+    mui "...My brother."
+
+    pause 0.5
+
+    mui "He says things like that."
+
+    pause
+
+    yn "Then you should listen to him."
+
+    pause
+
+    mui "...I wanted to hear it from someone else."
+
+    pause 1.0
+
+    yn "You're strange."
+
+    mui "...I get that a lot."
+
+    pause
+
+    mui "... Should I trust you?"
+
+    pause
+
+    menu:
+        "Yes.":
+            mui "...Okay."
+            pause 0.3
+            yn "That was easier than I expected."
+        "I don't know.":
+            mui "...Yeah"
+            pause 0.3
+            mui "That makes sense."
+        "No.":
+            mui "...Right."
+            pause 0.3
+            mui "...I figured."
+
+    pause 0.8
+
+    yn "Then listen carefully."
+
+    yn "If something feels wrong..."
+
+    yn "...run."
+
+    pause
+
+    mui "...Do I need to?"
+
+    pause 0.5
+
+    yn "Yes."
+
+    pause 1.0
+
+
+    scene bg forest_sunset at bg_fit
+
+    show yuichiroquiet at right_char
+
+    yuichiro "...So this is where you've been disappearing to."
+
+    pause 0.5
+
+    hide muiquiet
+    show muitalking at left_char
+
+    mui "...You followed me?"
 
     pause
 
     hide yuichiroquiet
     show yuichirotalking at right_char
 
-    yuichiro "That's easy to say."
-
-    yuichiro "You're not the one who stays behind."
-
-    hide yuichirotalking
-    show yuichiroquiet at right_char
-
-    pause
-
-    menu:
-        "He doesn't mean it.":
-            "He just..."
-            hide yuichiroquiet
-            show yuichirotaling at right_char
-            yuichiro "Don't soften it."
-
-    pause 0.5
-    hide yuichirotalking
-    show yuichiroquiet at right_char with dissolve
-
-    mui "..."
-
-    hide muiquiet
-    show muitalking at left_char with dissolve 
-
-    mui "I don't need anything."
-
-    hide muitalking
-    show muiquiet
-
-    pause 1.0
-
-    hide yuichiroquiet
-    show yuichirotalking with dissolve
-
-    yuichiro "...Then don't lose it."
+    yuichiro "You’re not subtle."
 
     pause 0.4
 
-    yuichiro "Whatever's left."
-
-    hide yuichirotalking
+    yuichiro "You leave at the same time every day."
 
     pause
 
+    yuichiro "...And come back a bit disturbed."
+
+    pause 0.6
+
+    yn "..."
+
+    
+    mui "...I was just—"
+
+    pause
+
+    yuichiro "Talking?"
+
+    pause
+
+    yuichiro "...Or staring again?"
+
+    pause 0.4
+
+    yuichiro "Who's the ghost?"
+
+    pause
+
+    mui "...They're not a ghost."
+
+    pause
+
+    yuichiro "Mm."
+
+    pause 0.3
+
+    yuichiro "...You gave them that look too."
+
+    pause
+
+    mui "...What look?"
+
+    pause
+
+    yuichiro "Like you’re trying to remember them before they’re gone."
+
+    pause 1.0
+
+    mui "..."
+
+    pause
+
+    yuichiro "...You like them?"
+
+    pause 0.4
+
+    mui "...I don’t think that’s it."
+
+    pause
+
+    yuichiro "So you *do* think about it."
+
+    pause 0.5
+
+    mui "...You're annoying."
+
+    pause
+
+    yuichiro "...You're obvious."
+
+    pause 1.0
+
+
     stop music fadeout 2.0
+
+    play sound "wind_hollow.wav"
+
+    thought "...Something changes here."
+
+    thought "The air gets heavier."
+
+    pause
+
+    scene bg night_forest at bg_fit
+    with slow_dissolve
+
+    thought "This part..."
+
+    thought "...I don't want to remember this part."
+
+    pause 1.0
+
+    play sound "distant_scream.wav"
+
+    mui "...?"
+
+    pause
+
+    yuichiro "Stay here."
+
+    pause 0.3
+
+    yuichiro "Don’t move."
+
+    pause
+
+    mui "...What was that?"
+
+    pause
+
+    yuichiro "...Inside."
+
+    pause
+
+    scene bg house_night at bg_fit
+    with hard_cut
+
+    play sound "fire_crackle.wav"
+
+    pause 0.5
+
+    mui "...It smells strange."
+
+    pause
+
+    yuichiro "...Don’t look."
+
+    pause
+
+    mui "...Why?"
+
+    pause 0.5
+
+    yuichiro "...Just don’t."
+
+    pause 1.0
+
+    thought "...But he does."
+
+    pause
+
+    play sound "heartbeat.wav"
+
+    thought "Red."
+
+    thought "That’s where it comes from."
+
+    pause
+
+    mui "..."
+
+    pause 0.5
+
+    mui "...They're not moving."
+
+    pause
+
+    yuichiro "...I said don’t look."
+
+    pause
+
+    mui "...Why aren’t they moving?"
+
+    pause 0.8
+
+    yuichiro "Because they’re—"
+
+    pause
+
+    stop sound
+    with flash_white
+
+    pause 1.0
 
     scene black
     with memory_fade
 
-    thought "Yuichiro Tokito."
+    thought "...After that..."
 
-    thought "He spoke like a blade."
-    thought "Straight. Unyielding."
-
-    pause
-
-    menu:
-        "A wall.":
-            thought "Nothing passed through."
-        "A wound.":
-            thought "Nothing healed either."
+    thought "...things don’t stay in order."
 
     pause
 
-    thought "And Muichiro..."
+    thought "There was something else."
 
-    thought "Like mist."
-
-    thought "There. But I cannot hold him."
+    thought "Something wrong."
 
     pause
 
-    play sound "crow.wav"
+    scene bg forest_dark at bg_fit
+    with slow_dissolve
 
-    crowyn "CAW! CAW!"
-    crowyn "KASUGAI CROW REPORT!"
+    play sound "low_growl.wav"
 
-    crowyn "NEW MISSION - SOUTHERN DISTRICT!"
+    thought "It wasn’t just an attack."
 
-    # sudden reality cut
-    stop music
-    with hard_cut
-
-    pause 0.3
-
-    thought "..."
-
-    thought "It follows."
-
-    thought "Even now."
+    thought "...Something was still there."
 
     pause
 
-    menu:
-        "Do I have a partner?":
-            crowyn "TOKITO MUICHIRO WILL ACCOMPANY YOU."
+    mui "..."
+
+    pause
+
+    mui "...You told me to run."
+
+    pause
+
+    mui "...I didn’t."
 
     pause 0.5
 
-    menu:
-        "Of course.":
-            thought "Some paths repeat."
-        "That's unfortunate.":
-            thought "So does this."
-        "Understood.":
-            thought "No deviation."
-
-    pause 0.6
-
-    thought "I hope he remembers."
-    thought "Or maybe not."
-    thought "Some things fade for a reason."
+    mui "...So now what?"
 
     pause
 
-    thought "Tokito Muichiro..."
+    yn "...If something feels wrong..."
 
-    pause 0.5
+    yn "...run."
 
-    thought "...stay in the mist."
+    pause
+
+    mui "...Too late."
+
+    pause
+
+    thought "That’s when it starts."
+    thought "Not the memory."
+    thought "The forgetting."
+
+    pause
 
     scene black
     with Fade(1.5, 0.5, 2.0)

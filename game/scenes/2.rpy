@@ -1,5 +1,5 @@
 label mission_scene:
-    scene bg forest_night
+    scene bg forest_night at bg_fit
     play sound "wind.wav"
     with fade
     thought "We trained here."

@@ -8,7 +8,7 @@ label mha_intro:
     pause 0.5
     play sound "heartbeat.wav"
     thought "...My body hurts."
-    scene bg street
+    scene bg street at bg_fit
     with fade
     play sound "city_ambience.wav"
     show screen shake
@@ -27,7 +27,7 @@ label mha_intro:
     pause 0.3
     thought "That answer shouldn't scare me."
     thought "But it does."
-    scene bg street
+    scene bg street at bg_fit
     show aizawa at center
     aizawa "..You two are finally awake."
     p "..Who-"
@@ -70,7 +70,7 @@ label mha_intro:
     thought "Same ground."
     thought "Same silence."
     thought "This.. isn't that sky."
-    scene bg street
+    scene bg street at bg_fit
     show mui at center
     p "Do you recognize anything?"
     mui "No."
@@ -95,7 +95,7 @@ label mha_intro:
     pause
     mui "…Tch."
     p "We’ll go."
-    scene bg ua_gate
+    scene bg ua_gate at bg_fit
     with fade
     play sound "distant_city.wav"
     thought "Everything feels too alive."
@@ -104,7 +104,7 @@ label mha_intro:
     p "Yeah."
     p "And we’re stuck in it."
     scene black with fade
-    scene bg office
+    scene bg office at bg_fit
     with fade
     show nezu at center
     nezu "Interesting."
@@ -115,7 +115,7 @@ label mha_intro:
     mui "..That's accurate."
     nezu "Oh my!"
 
-    scene bg classroom
+    scene bg classroom at bg_fit
     with fade
     show aizawa at center
     aizawa "Two transfer students."
