@@ -1,84 +1,145 @@
 label prologue_start:
 
     scene black
-    with fade
-
+    with memory_fade
     play sound "wind_soft.wav"
-
-    thought "...Red"
-
-    menu:
-        "Maybe he was wrong.":
-            thought "People misremember things."
-            thought "Even people close to you."
-        "Maybe I changed.":
-            thought "I wonder if he ever even knew me."
-
-    thought "He used to say I remind him of the color red."
-    thought "I wonder what he meant..."
-
+    thought "...Red."
+    thought "A trace."
+    pause 0.5
+    thought "Something left behind."
     pause
-
-    scene bg forest_sunset at bg_fit
-
+    scene bg forest_sunset at bg_fit, drift
+    with slow_dissolve
     play music "memory_theme.mp3"
+    thought "It doesn't return."
+    thought "It lingers."
+    show muiquiet at left_char
+    show yuichiroquiet at right_char
+    pause 0.5
+    hide yuichiroquiet
+    show yuichirotalking at right_char with dissolve
+    yuichiro "Your blade is wavering."
+    yuichiro "You're looking somewhere else."
+    hide yuichirotalking
+    show yuichiroquiet at right_char 
+    mui "..."
+    pause 0.4
+    hide muiquiet
+    show muitalking at left_char with dissolve
+    mui "It's the wind."
+    hide muitalking
+    show muiquiet at left_char
+    hide yuichiroquiet
+    show yuichirotalking at right_char 
+    yuichiro "Wind doesn't hesitate."
+    pause 0.5
+    yuichiro "...People do."
+    hide yuichirotalking
+    show yuichiroquiet at right_char
+    pause
+    show screen flash_overlay
+    with flash_white
+    "That's enough."
+    yuichiro "Move."
+    hide flash_white
 
-    thought "It leaks in… like mist through broken wood."
+    pause 0.5
 
-    show muis at left 
-    show yuichiro at right
+    hide yuichiroquiet
+    show yuichirotalking at right_char with dissolve
 
-    yuichiro "You swing your blade like you're trying to forget something."
-    mui "I don't forget things."
-    yuichiro "We both know that's a lie, airhead."
+    yuichiro "If you keep drifting..."
+
+    yuichiro "...you'll disappear."
+
+    hide yuichirotalking
+    show yuichiroquiet at right_char with dissolve
+
+    pause 0.3
+
+    hide muiquiet
+    show muitalking at left_char with dissolve
+
+    mui "Then I disappear."
+
+    hide muitalking
+    show muiquiet
+
+    pause
+
+    hide yuichiroquiet
+    show yuichirotalking at right_char
+
+    yuichiro "That's easy to say."
+
+    yuichiro "You're not the one who stays behind."
+
+    hide yuichirotalking
+    show yuichiroquiet at right_char
 
     pause
 
     menu:
-        "Step between them":
-            "He's getting better."
-            yuichiro "You always say that."
-        "Stay where you are":
-            thought "I remember this argument..."
-            thought "I think."
+        "He doesn't mean it.":
+            "He just..."
+            hide yuichiroquiet
+            show yuichirotaling at right_char
+            yuichiro "Don't soften it."
 
-    yuichiro "You don't think when you fight."
-    yuichiro "That's why he's close to you."
+    pause 0.5
+    hide yuichirotalking
+    show yuichiroquiet at right_char with dissolve
 
-    mui "...I don't need anyone close."
+    mui "..."
 
-    pause
+    hide muiquiet
+    show muitalking at left_char with dissolve 
 
-    menu:
-        "That's not true.":
-            yuichiro "Yeah, Muichiro. What are you saying?"
-        "He doesn't mean that.":
-            yuichiro "He doesn't know how to express things properly."
+    mui "I don't need anything."
 
-    mui "I don't need anyone."
+    hide muitalking
+    show muiquiet
 
     pause 1.0
 
-    yuichiro "..."
-    yuichiro "Don't lose yourself in him."
+    hide yuichiroquiet
+    show yuichirotalking with dissolve
+
+    yuichiro "...Then don't lose it."
+
+    pause 0.4
+
+    yuichiro "Whatever's left."
+
+    hide yuichirotalking
 
     pause
 
+    stop music fadeout 2.0
+
     scene black
+    with memory_fade
 
     thought "Yuichiro Tokito."
-    thought "Muichiro's older brother."
+
+    thought "He spoke like a blade."
+    thought "Straight. Unyielding."
+
+    pause
 
     menu:
-        "A wall built to protect him.":
-            thought "Too sharp to approach."
-        "A blade pointed the wrong way.":
-            thought "Protection and harm look the same to him."
+        "A wall.":
+            thought "Nothing passed through."
+        "A wound.":
+            thought "Nothing healed either."
 
     pause
 
     thought "And Muichiro..."
-    thought "He always stood between both versions of Yuichiro."
+
+    thought "Like mist."
+
+    thought "There. But I cannot hold him."
 
     pause
 
@@ -86,39 +147,52 @@ label prologue_start:
 
     crowyn "CAW! CAW!"
     crowyn "KASUGAI CROW REPORT!"
+
     crowyn "NEW MISSION - SOUTHERN DISTRICT!"
 
-    stop music fadeout 1.5
+    # sudden reality cut
+    stop music
+    with hard_cut
 
-    thought "The past never gets buried."
+    pause 0.3
+
+    thought "..."
+
+    thought "It follows."
+
+    thought "Even now."
+
+    pause
 
     menu:
         "Do I have a partner?":
             crowyn "TOKITO MUICHIRO WILL ACCOMPANY YOU."
 
+    pause 0.5
+
     menu:
         "Of course.":
-            thought "Some things don't change."
+            thought "Some paths repeat."
         "That's unfortunate.":
-            thought "But perhaps necessary."
+            thought "So does this."
         "Understood.":
-            thought "No room for hesitation."
+            thought "No deviation."
 
     pause 0.6
 
-    menu:
-        "I hope he remembers.":
-            thought "Even a little."
-        "It's better if he doesn't.":
-            thought "Memories only complicate things."
-        "I don't want him to.":
-            thought "Some things are easier forgotten."
+    thought "I hope he remembers."
+    thought "Or maybe not."
+    thought "Some things fade for a reason."
 
     pause
 
-    thought "Muichiro Tokito..."
-    thought "Please don't remember me..."
+    thought "Tokito Muichiro..."
+
+    pause 0.5
+
+    thought "...stay in the mist."
 
     scene black
+    with Fade(1.5, 0.5, 2.0)
 
     jump mission_scene
