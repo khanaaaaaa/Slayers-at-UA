@@ -202,96 +202,122 @@ label prologue_start:
     pause
 
     hide muitalking
-    show muiquiet
+    show muiquiet at left_char
 
     mui "...My brother."
 
-    pause 0.5
-
     mui "He says things like that."
+    hide muitalking
+    show muiquiet at left_char
 
     pause
 
+    hide youngynquiett
+    show youngyntalkingg at right_char
     yn "Then you should listen to him."
-
-    pause
+    hide youngyntalkingg
+    show youngynquiett at right_char
+    hide muiquiet
+    show muitalking at left_char
 
     mui "...I wanted to hear it from someone else."
-
-    pause 1.0
-
+    hide muitalking
+    show muiquiet at left_char
+    hide youngynquiett
+    show youngyntalkingg at right_char
     yn "You're strange."
-
+    hide youngyntalkingg
+    show youngynquiet at right_char
+    hide muiquiet
+    show muitalking at left_char
     mui "...I get that a lot."
-
+    hide muitalkingg
+    show muiquiet at right_char
     pause
-
+    hide muiquiet
+    show muitalking at left_char
     mui "... Should I trust you?"
+    hide muitalking
+    show muiquiet at left_char
 
     pause
 
     menu:
         "Yes.":
+            hide muiquiet
+            show muitalking at left_char
             mui "...Okay."
+            hide muitalking
+            show muiquiet at left_char
             pause 0.3
+            hide youngynquiett
+            show youngyntalkingg at right_char
             yn "That was easier than I expected."
         "I don't know.":
+            hide muiquiet
+            show muitalking at left_char
             mui "...Yeah"
+            hide muitalking
+            show muiquiet at left_char
             pause 0.3
+            hide youngynquiett
+            show youngyntalkingg at right_char
             mui "That makes sense."
         "No.":
+            hide muiquiet
+            show muitalking at left_char
             mui "...Right."
+            hide muitalking
+            show muiquiet at left_char
             pause 0.3
+            hide youngynquiett
+            show youngyntalkingg at right_char
             mui "...I figured."
-
-    pause 0.8
 
     yn "Then listen carefully."
 
     yn "If something feels wrong..."
 
     yn "...run."
-
-    pause
+    hide youngyntalkingg
+    show youngynquiett at right_char
+    hide muiquiet
+    show muitalking at left_char
 
     mui "...Do I need to?"
-
-    pause 0.5
+    hide muitalking
+    show muiquiet at left_char
+    hide youngynquiett
+    show youngyntalkingg at right_char
 
     yn "Yes."
-
-    pause 1.0
 
 
     scene bg forest_sunset at bg_fit
 
     show yuichiroquiet at right_char
+    show muiquiet at right_char
+    hide yuichiroquiet
+    show yuichirotalking at right_char
 
     yuichiro "...So this is where you've been disappearing to."
 
-    pause 0.5
 
     hide muiquiet
     show muitalking at left_char
 
     mui "...You followed me?"
 
-    pause
 
     hide yuichiroquiet
     show yuichirotalking at right_char
 
     yuichiro "You’re not subtle."
 
-    pause 0.4
-
     yuichiro "You leave at the same time every day."
 
-    pause
+    yuichiro "...And come back oddly happy, yet disturbed."
 
-    yuichiro "...And come back a bit disturbed."
-
-    pause 0.6
 
     yn "..."
 
