@@ -109,9 +109,6 @@ screen say(who, what):
 
         text what id "what"
 
-
-    ## If there's a side image, display it above the text. Do not display on the
-    ## phone variant - there's no room.
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
 
@@ -134,8 +131,8 @@ style window:
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
-
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Frame("gui/textbox.png", xalign=0.5, yalign=1.0)
+    padding (40, 36, 40, 36)
 
 style namebox:
     xpos gui.name_xpos
@@ -143,23 +140,27 @@ style namebox:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
-
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
-    padding gui.namebox_borders.padding
+    padding (12, 6, 12, 6)
 
 style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
+    color "#e8e8f0"
+    size gui.name_text_size
+    outlines [(2, "#00000088", 0, 0)]
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
-
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
-
     adjust_spacing False
+    color "#e8e8f0"
+    size gui.text_size
+    line_spacing 8
+    outlines [(1, "#00000066", 0, 0)]
 
 ## Input screen ################################################################
 ##
@@ -220,14 +221,20 @@ style choice_vbox:
     xalign 0.5
     ypos 405
     yanchor 0.5
-
     spacing gui.choice_spacing
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    background Frame("gui/button/choice_idle_background.png", gui.choice_button_borders)
+    hover_background Frame("gui/button/choice_hover_background.png", gui.choice_button_borders)
+    padding (30, 12, 30, 12)
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+    color "#aaaacc"
+    hover_color "#e8e8ff"
+    size 32
+    outlines [(1, "#00000088", 0, 0)]
 
 
 ## Quick Menu screen ###########################################################

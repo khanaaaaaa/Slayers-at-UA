@@ -44,14 +44,18 @@ define water_cut = Fade(0.1, 0.0, 0.8, color="#1a3a5c")
 screen vignette():
     add Solid("#00000055") at truecenter
 
+transform memory_flash_anim:
+    alpha 0.0
+    linear 0.08 alpha 0.9
+    linear 0.4 alpha 0.0
+
+transform water_overlay_anim:
+    alpha 0.0
+    linear 0.2 alpha 0.35
+    linear 1.2 alpha 0.0
+
 screen memory_flash():
-    add Solid("#ffffff") at truecenter:
-        alpha 0.0
-        linear 0.08 alpha 0.9
-        linear 0.4 alpha 0.0
+    add Solid("#ffffff") at memory_flash_anim
 
 screen water_overlay():
-    add Solid("#1a3a5c") at truecenter:
-        alpha 0.0
-        linear 0.2 alpha 0.35
-        linear 1.2 alpha 0.0 
+    add Solid("#1a3a5c") at water_overlay_anim
