@@ -165,6 +165,11 @@ label mha_intro:
     mui "I am. It's loud. Pointlessly loud."
     hide muitalking
     show muiquiet at center_char
+    thought "He's not wrong."
+    thought "There's a kid over there who just exploded something for fun."
+    thought "This is fine."
+    thought "Everything is fine."
+    pause 0.5
 
     yn "You're not even surprised?"
 

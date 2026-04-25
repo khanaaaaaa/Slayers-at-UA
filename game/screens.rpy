@@ -101,17 +101,92 @@ screen say(who, what):
         id "window"
 
         if who is not None:
-
             window:
                 id "namebox"
                 style "namebox"
                 text who id "who"
-
+        
         text what id "what"
-
+    
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
 
+init python:
+    config.character_id_prefixes.append('namebox')
+
+style window is default
+style say_label is default
+style say_dialogue is default
+style say_thought is say_dialogue
+style namebox is default
+style namebox_label is say_label 
+
+style window:
+    xalign 0.5
+    xfill True
+    yalign 1.0
+    ysize 290
+    background Solid("#0a0a0f99")
+    bottom_padding 28
+    top_padding 28
+    left_padding 48
+    right_padding 48
+
+style namebox:
+    xpos 48
+    xanchor 0.0
+    ypos -2
+    ysize None
+    background Solid("#00000000")
+    padding (0, 0, 0, 0)
+
+style say_label:
+    xalign 0.0
+    yalign 1.0
+    size 36
+    color "#e8e8f0"
+    outlines [(2, "#00000099", 0, 0)]
+
+style say_dialogue:
+    xpos 48
+    xsize 1824
+    ypos 52
+    adjust_spacing False
+    color "#dde8f0"
+    size 33
+    line_spacing 10
+    outlines [(1, "#00000055", 0, 0)]
+
+screen choice(items):
+    style_prefix "choice"
+    vbox:
+        for i in items:
+                textbutton i.caption action i.action
+
+style choice_vbox is vbox
+style choice_button is button 
+style choice_button_text is button_text 
+
+style choice_vbox:
+    xalign 0.5
+    ypos 420
+    yanchor 0.5
+    spacing 18
+
+style choice_button is default:
+    xminimum 600
+    xmaximum 1400
+    background Solid("#0d0d1a99")
+    hover_background Solid("#1a1a3399")
+    padding (36, 14, 36, 14)
+
+style choice_button_text is default:
+    xalign 0.5
+    textalign 0.5
+    color "#9999cc"
+    hover_color "#e0e0ff"
+    size 31
+    outlines [(1, "#00000077", 0, 0)]
 
 ## Make the namebox available for styling through the Character object.
 init python:

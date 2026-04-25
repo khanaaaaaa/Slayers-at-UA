@@ -136,6 +136,9 @@ label arrival_scene:
     mina "Oh wow. Are those real swords?"
     denki "That's so cool—"
     iida "Please refrain from bringing weapons onto school grounds without prior authorization—"
+    thought "Iida has been talking for thirty seconds."
+    thought "Muichiro has not blinked once."
+    pause 0.4
     bakugo "Tch. What are they even doing here."
     pause 0.3
 
@@ -163,6 +166,11 @@ label arrival_scene:
     mui "I don't know what that means."
     hide muitalking
     show muiquiet at right_char
+    thought "He genuinely doesn't."
+    thought "I watched him stare at a vending machine for forty seconds yesterday."
+    thought "He didn't buy anything."
+    thought "He just left."
+    pause 0.5
 
     thought "He means it literally."
     thought "And somehow that's the funniest thing I've heard in weeks."

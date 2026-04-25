@@ -241,7 +241,12 @@ label prologue_start:
             yn "That was easier than I expected."
             hide youngyntalkingg
             show youngynquiett at right_char
-            thought "It always is. ...Always?"
+            if route == "meta":
+                thought "It always is. I've read this part."
+                thought "He says okay. Then he forgets."
+                thought "Every time."
+            else:
+                thought "It always is. ...Always?"
 
         "...I don't know yet. But I'm still here.":
             hide muiquiet
@@ -249,8 +254,13 @@ label prologue_start:
             mui "...Yeah. That makes sense."
             hide muitalking
             show muiquiet at left_char
-            thought "He's not offended. He never is."
-            thought "I don't know if that's a good thing."
+            if route == "loud":
+                thought "I almost said something else."
+                thought "Something embarrassing."
+                thought "I didn't. Growth."
+            else:
+                thought "He's not offended. He never is."
+                thought "I don't know if that's a good thing."
 
         "...No. But I'll stay anyway.":
             hide muiquiet
@@ -258,8 +268,13 @@ label prologue_start:
             mui "...Right. ...I figured."
             hide muitalking
             show muiquiet at left_char
-            thought "He says that like he expected it."
-            thought "Like he's been told no before. By me."
+            if route == "silent":
+                thought "He says it like he expected it."
+                thought "Like he's been told no before. By me."
+                thought "He probably has."
+            else:
+                thought "He says that like he expected it."
+                thought "Like he's been told no before. By me."
 
     pause 0.5
 
