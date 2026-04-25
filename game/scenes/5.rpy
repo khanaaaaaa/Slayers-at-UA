@@ -9,6 +9,7 @@ label dorms_scene:
     thought "They gave us rooms. Side by side."
     thought "Like they knew we'd want to stay close."
     thought "...Did I ask for that? I don't remember asking."
+    thought "I'm going to choose to believe I asked."
     pause 0.6
 
     show muiquiet at center_char
@@ -31,6 +32,7 @@ label dorms_scene:
 
     thought "Yes. No. I don't know."
     thought "Both answers feel true."
+    thought "That's been happening a lot lately."
     pause 0.5
 
     yn "...I don't think so."
@@ -54,6 +56,9 @@ label dorms_scene:
 
     thought "He's right. Because I know too much."
     thought "And I don't know how."
+    thought "And if I just said things I'd say something like"
+    thought "'you're going to call me Sparrow in about six months'"
+    thought "and that would be a lot."
     pause 0.6
 
     yn "...Sorry."
@@ -67,8 +72,18 @@ label dorms_scene:
     hide muitalking
     show muiquiet at center_char
 
-    thought "...What."
-    pause 0.4
+    if route == "meta":
+        thought "Of course I do."
+        thought "I've been reading about you for years."
+        thought "This is deeply weird and I'm handling it terribly."
+    elif route == "loud":
+        thought "I almost said 'yeah we met in a forest for weeks.'"
+        thought "I didn't."
+        thought "Barely."
+        thought "It was close."
+    else:
+        thought "...What."
+        pause 0.4
 
     yn "...Familiar?"
     pause 0.3
@@ -84,6 +99,8 @@ label dorms_scene:
     thought "Yes. In the forest. Every day for weeks."
     thought "You told me you'd remember my name. You didn't."
     thought "But you're starting to."
+    thought "Which is either progress or a coincidence."
+    thought "I'm choosing to believe it's progress."
     pause 0.6
 
     yn "...I don't think so."
@@ -98,6 +115,7 @@ label dorms_scene:
     thought "It doesn't. None of this makes sense."
     thought "But I can't tell him that."
     thought "Because I don't know what's real anymore."
+    thought "And also because it would take a very long time to explain."
     pause 0.8
 
     scene bg classroom at bg_fit
@@ -121,6 +139,8 @@ label dorms_scene:
 
     thought "...See. I knew."
     thought "I always know. And I don't know why."
+    thought "Well. I do know why."
+    thought "But I'm not thinking about that right now."
     pause 0.5
 
     hide muiquiet
@@ -142,12 +162,16 @@ label dorms_scene:
     thought "Good question."
     thought "I know the answer. But it feels like something I read."
     thought "...Read. Where."
+    thought "On a screen."
+    thought "What's a screen."
+    thought "I keep doing that."
     pause 0.6
 
     yn "...Somewhere far from here."
     pause 0.4
 
     thought "That's not a lie. It's just not the whole truth."
+    thought "I'm getting good at that."
     pause 0.6
 
     scene bg office at bg_fit
@@ -179,6 +203,7 @@ label dorms_scene:
     thought "No. I'm from another world."
     thought "This world. But not this version of it."
     thought "...I don't know how to say that."
+    thought "I've been trying to figure out how to say that for days."
     pause 0.6
 
     yn "...I don't know where I'm from."
@@ -186,6 +211,11 @@ label dorms_scene:
 
     aizawa "..."
     aizawa "That's the most honest thing you've said."
+    pause 0.4
+
+    thought "He's not wrong."
+    thought "Everything else has been technically true."
+    thought "But that one I actually meant."
     pause 0.6
 
     hide aizawa
@@ -209,6 +239,7 @@ label rooftop_scene:
     thought "I came up here without thinking."
     thought "Like my body knew where to go."
     thought "...He's already here."
+    thought "Of course he is."
     pause 0.6
 
     show muiquiet at center_char
@@ -233,6 +264,8 @@ label rooftop_scene:
 
     thought "He waited. For me. Without knowing why."
     thought "That's not nothing."
+    thought "That's actually kind of a lot."
+    thought "I'm not going to say that out loud."
     pause 0.6
 
     yn "...Do you remember anything?"
@@ -258,6 +291,8 @@ label rooftop_scene:
     thought "You should remember calling me Sparrow."
     thought "But you don't."
     thought "And I don't know if that's your fault. Or mine."
+    thought "Probably mine."
+    thought "Most things are."
     pause 0.8
 
     yn "...I don't know."
@@ -282,6 +317,8 @@ label rooftop_scene:
     thought "Because I don't know what's true."
     thought "Because I remember things that haven't happened yet."
     thought "Because I know you. And I shouldn't."
+    thought "Because if I told you the truth you'd look at me like I was broken."
+    thought "And I'm not ready for that."
     pause 0.6
 
     yn "...I don't know how to answer that."
@@ -304,6 +341,7 @@ label rooftop_scene:
     show muiquiet at center_char
 
     thought "No. No no no. Not yet. I'm not ready."
+    thought "I haven't even figured out the vending machine situation."
     pause 0.6
 
     yn "...I'm fine."
@@ -319,6 +357,8 @@ label rooftop_scene:
     thought "I'm being forgotten."
     thought "If no one remembers me — I stop existing."
     thought "...How do I know that."
+    thought "I just do. The same way I know everything."
+    thought "Which is a terrible way to know things."
     pause 0.6
 
     yn "...I don't know."
@@ -342,6 +382,7 @@ label rooftop_scene:
 
     thought "He's right. I have to remember."
     thought "Even if it hurts. Even if I don't want to."
+    thought "Even if what I remember is the reason I ended up in a river."
     pause 0.8
 
     scene black

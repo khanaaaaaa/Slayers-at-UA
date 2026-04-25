@@ -35,6 +35,7 @@ label arrival_scene:
             thought "I know where I came from. I just don't know how to say it."
             thought "And I don't know if saying it would make things better."
             thought "Or much, much worse."
+            thought "Probably worse."
 
         "Somewhere you've never heard of.":
             yn "...Somewhere you've never heard of."
@@ -42,6 +43,7 @@ label arrival_scene:
             yn "Not this one."
             nezu "That's either very honest or very evasive."
             thought "Both. Definitely both."
+            thought "I'm very good at both."
 
         "Somewhere that doesn't exist here.":
             yn "...Somewhere that doesn't exist here."
@@ -49,7 +51,10 @@ label arrival_scene:
             nezu "Most people who don't want to answer say they don't remember."
             nezu "You said it doesn't exist."
             nezu "That's a very specific kind of answer."
-            thought "He noticed. Of course he noticed. He notices everything."
+            thought "He noticed. Of course he noticed."
+            thought "He notices everything."
+            thought "I hate that about him."
+            thought "Respectfully."
 
         "Ask Muichiro.":
             yn "...Ask him."
@@ -60,6 +65,8 @@ label arrival_scene:
             hide muitalking
             show muiquiet at left_char
             nezu "Concise. I appreciate that."
+            thought "He gave the most accurate answer possible."
+            thought "And somehow it sounds insane."
 
     nezu "You'll stay here for now. Under observation."
     nezu "Aizawa will supervise."
@@ -84,6 +91,9 @@ label arrival_scene:
             yn "...We'll try."
             nezu "That's all I ask."
             aizawa "It's not. But it's a start."
+            thought "Aizawa said it's not."
+            thought "He's right."
+            thought "But I appreciate the participation trophy."
 
         "What does integrate mean exactly.":
             yn "...What does integrate mean exactly."
@@ -91,18 +101,27 @@ label arrival_scene:
             nezu "Don't use your swords on students."
             nezu "Try not to know things you shouldn't know."
             thought "That last one."
-            thought "He said it casually. But he was looking at me when he said it."
+            thought "He said it casually."
+            thought "But he was looking at me when he said it."
+            thought "He knows something. Or suspects something."
+            thought "Either way I'm going to pretend I didn't notice."
 
         "What if we can't.":
             yn "...What if we can't."
             nezu "Then we'll deal with that when it happens."
             nezu "I find it's better not to borrow trouble."
             aizawa "You're already trouble. Both of you."
+            thought "He said both of you."
+            thought "Muichiro looked mildly offended."
+            thought "Which is the most emotion I've seen from him today."
 
         "Say nothing.":
             thought "I don't say anything."
             thought "Because I know exactly what's coming."
-            thought "And I don't know if I can stop it. Or if I should."
+            thought "And I don't know if I can stop it."
+            thought "Or if I should."
+            thought "Or if stopping it would make things worse."
+            thought "Probably worse."
 
     hide nezu
     hide aizawa
@@ -114,7 +133,6 @@ label arrival_scene:
 
     thought "The classroom is on the third floor. Twenty seats."
     thought "Bakugo sits near the back. Izuku sits near the front."
-    thought "..."
     thought "I haven't been there yet. I shouldn't know that."
     thought "...Stop."
     pause 0.6
@@ -136,9 +154,13 @@ label arrival_scene:
     mina "Oh wow. Are those real swords?"
     denki "That's so cool—"
     iida "Please refrain from bringing weapons onto school grounds without prior authorization—"
+    pause 0.3
+
     thought "Iida has been talking for thirty seconds."
     thought "Muichiro has not blinked once."
+    thought "I think Iida is scared but doesn't know it yet."
     pause 0.4
+
     bakugo "Tch. What are they even doing here."
     pause 0.3
 
@@ -166,16 +188,14 @@ label arrival_scene:
     mui "I don't know what that means."
     hide muitalking
     show muiquiet at right_char
+
     thought "He genuinely doesn't."
     thought "I watched him stare at a vending machine for forty seconds yesterday."
-    thought "He didn't buy anything."
-    thought "He just left."
+    thought "He didn't buy anything. He just left."
+    thought "I don't know what he was thinking about."
+    thought "I never know what he's thinking about."
+    thought "That's new."
     pause 0.5
-
-    thought "He means it literally."
-    thought "And somehow that's the funniest thing I've heard in weeks."
-    thought "...I don't laugh. But I almost do."
-    pause 0.6
 
     izuku "Your breathing form earlier — I've never seen anything like it."
     izuku "Is it a quirk? Or a technique?"
@@ -192,15 +212,20 @@ label arrival_scene:
             thought "Don't. Don't ask. Please don't ask."
             aizawa "That's enough. Sit down."
             thought "...Thank you."
+            thought "I owe Aizawa one."
 
         "Something like a quirk.":
             yn "...Something like a quirk. But older. And it costs more."
             izuku "Costs more how?"
             thought "How do I explain that pain is a teacher."
             thought "That scars are a curriculum."
+            thought "That you breathe until your lungs feel like they're tearing"
+            thought "and then you breathe harder."
             yn "...It's hard to explain."
             izuku "I'd love to hear it sometime."
             thought "He means it. He always means it."
+            thought "He's going to write a twelve-page analysis."
+            thought "I'm going to be in it."
 
         "Let Muichiro answer.":
             yn "...Ask him."
@@ -221,12 +246,15 @@ label arrival_scene:
             show muiquiet at right_char
             thought "He says it like it's a weather report."
             thought "Most people don't survive. Correct."
+            thought "Denki looks like he's reconsidering his life choices."
+            thought "Good."
 
         "Stay quiet.":
             thought "I don't answer."
             thought "Because the answer involves a world that shouldn't exist."
             thought "And a boy who was supposed to die in it."
             thought "And me. Standing in the middle of both."
+            thought "That's a lot to explain before lunch."
 
     scene bg dorms_hallway at bg_fit
     with soft_dissolve
@@ -250,23 +278,27 @@ label arrival_scene:
             thought "She's right. She's completely right."
             thought "Flat. Honest. Without cruelty."
             thought "Which somehow makes it worse."
+            thought "I'd prefer cruelty. Cruelty I can dismiss."
 
         "I read people well.":
             yn "...I read people well."
             tsuyu "Ribbit. That's not what that looked like."
-            thought "She's not going to let it go. She never lets things go."
-            thought "I know that about her. I know too much about all of them."
+            thought "She said ribbit."
+            thought "Out loud. On purpose."
+            thought "And then immediately called me out."
+            thought "I respect that more than anything that has happened today."
 
         "Would you believe me if I told you.":
             yn "...Would you believe me if I told you?"
             tsuyu "Probably. I believe most things. Ribbit."
             thought "I almost tell her. Right there. In the hallway."
-            thought "..."
             thought "But I don't."
             thought "Because I've already changed too much."
             yn "...Maybe later."
             tsuyu "Okay. I'll be here."
             thought "She means it. She always means it."
+            thought "That's either comforting or terrifying."
+            thought "Both."
 
         "I don't know how to explain it.":
             yn "...I don't know how to explain it."
@@ -274,6 +306,7 @@ label arrival_scene:
             tsuyu "I just wanted you to know I noticed."
             thought "No pressure. Just — I noticed."
             thought "I don't know what to do with kindness that doesn't ask for anything."
+            thought "It makes me want to sit down."
 
     hide tsuyu
 
@@ -306,6 +339,7 @@ label arrival_scene:
             thought "I know. You always watch."
             thought "You watch and you wait and you explode."
             thought "...Don't say that."
+            thought "He would not take that well."
 
         "Okay.":
             yn "...Okay."
@@ -315,6 +349,8 @@ label arrival_scene:
             thought "I don't have that. I haven't had that in a long time."
             yn "...I'll let you know when I find it."
             bakugo "Tch."
+            thought "He accepted that."
+            thought "Somehow."
 
         "You're not wrong to be suspicious.":
             yn "...You're not wrong to be suspicious."
@@ -323,6 +359,7 @@ label arrival_scene:
             bakugo "Not yet. So there's a yet."
             thought "He caught that. Of course he caught that."
             thought "He catches everything."
+            thought "It's annoying."
 
         "I could ask you the same thing.":
             yn "...I could ask you the same thing."
@@ -332,7 +369,9 @@ label arrival_scene:
             bakugo "That's called being prepared."
             yn "So is what I do."
             bakugo "Tch."
-            thought "He doesn't have an answer for that. Good."
+            thought "He walked away very aggressively."
+            thought "The way you walk when you want someone to know you're thinking about them."
+            thought "He would hate that I noticed that."
 
     hide bakugo
 

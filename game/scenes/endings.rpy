@@ -1,17 +1,3 @@
-## ════════════════════════════════════════════════════════════════
-##  ENDINGS
-##  Bad endings branch from choices in scenes 1-6.
-##  ending_fade_out  — Y/N stays in the river. She fades.
-##  ending_forgotten — Muichiro forgets her completely. She vanishes.
-##  ending_truth     — Y/N tells everyone the truth. It breaks things.
-## ════════════════════════════════════════════════════════════════
-
-
-## ── BAD ENDING 1 ─────────────────────────────────────────────────
-## Triggered from scene 6 memory_scene menu: "...stay."
-## Y/N chooses to stay in the memory. She doesn't surface.
-## She fades out of existence entirely.
-
 label ending_fade_out:
 
     scene black
@@ -19,7 +5,6 @@ label ending_fade_out:
 
     stop sound fadeout 2.0
 
-    thought "..."
     thought "i stay."
     pause 0.5
 
@@ -28,14 +13,11 @@ label ending_fade_out:
     thought "and then i can't feel anything."
     pause 0.5
 
-    thought "..."
-    thought "that's okay."
-    thought "i think."
+    thought "that's okay. i think."
     thought "i'm tired of feeling things anyway."
     pause 0.6
 
-    thought "i wonder if he'll notice."
-    thought "when i'm gone."
+    thought "i wonder if he'll notice when i'm gone."
     thought "i wonder if there'll be a moment where he looks up"
     thought "and something feels wrong"
     thought "and he doesn't know why."
@@ -44,8 +26,7 @@ label ending_fade_out:
     thought "probably not."
     thought "that's the thing about being forgotten."
     thought "it doesn't announce itself."
-    thought "it just."
-    thought "stops."
+    thought "it just stops."
     pause 0.8
 
     scene black
@@ -53,18 +34,15 @@ label ending_fade_out:
 
     pause 1.5
 
-    centered "{size=28}{color=#888888}she stayed.{/color}{/size}"
+    centered "{size=26}{color=#888888}ending: she stayed.{/color}{/size}"
     pause 0.5
-    centered "{size=22}{color=#555555}and the forest forgot her name.{/color}{/size}"
-    pause 1.0
+    centered "{size=20}{color=#555555}the forest forgot her name.{/color}{/size}"
+    pause 0.5
+    centered "{size=16}{color=#333344}she was the only one who knew where the good training spots were. this was a loss for everyone.{/color}{/size}"
+    pause 1.2
 
     return
 
-
-## ── BAD ENDING 2 ─────────────────────────────────────────────────
-## Triggered if the player consistently pushes Muichiro away
-## across scenes 5-7 (call this label from anchor_scene if needed).
-## He forgets her. She vanishes mid-scene.
 
 label ending_forgotten:
 
@@ -87,12 +65,9 @@ label ending_forgotten:
 
     pause 0.8
 
-    thought "..."
-    thought "There it is."
-    thought "The thing I was afraid of."
-    thought "Said out loud."
-    thought "Casually."
-    thought "Like it's nothing."
+    thought "there it is."
+    thought "the thing i was afraid of."
+    thought "said out loud. casually. like it's nothing."
     pause 0.6
 
     yn "...Yes."
@@ -100,33 +75,27 @@ label ending_forgotten:
 
     hide muiquiet
     show muitalking at center_char
-    mui "..."
     mui "I don't think so."
     mui "I'm sorry."
     hide muitalking
     show muiquiet at center_char
 
-    thought "He's not being cruel."
-    thought "That's the worst part."
-    thought "He's just telling the truth."
-    pause 0.6
-
-    thought "I can feel it."
-    thought "The edges of me."
-    thought "Going soft."
-    thought "Like paper left in water."
+    thought "he's not being cruel."
+    thought "that's the worst part."
+    thought "he's just telling the truth."
     pause 0.5
 
-    thought "..."
-    thought "I look at my hands."
-    thought "I can see through them."
+    thought "i can feel it. the edges of me going soft."
+    thought "like paper left in water."
     pause 0.5
 
-    thought "okay."
-    thought "okay."
+    thought "i look at my hands."
+    thought "i can see through them."
+    pause 0.5
+
+    thought "okay. okay."
     thought "i knew this was possible."
-    thought "i just thought—"
-    thought "i thought i had more time."
+    thought "i just thought i had more time."
     pause 0.6
 
     scene black
@@ -136,17 +105,15 @@ label ending_forgotten:
 
     pause 1.0
 
-    centered "{size=28}{color=#888888}he forgot.{/color}{/size}"
+    centered "{size=26}{color=#888888}ending: he forgot.{/color}{/size}"
     pause 0.5
-    centered "{size=22}{color=#555555}and she went with it.{/color}{/size}"
-    pause 1.0
+    centered "{size=20}{color=#555555}and she went with it.{/color}{/size}"
+    pause 0.5
+    centered "{size=16}{color=#333344}he stood in the hallway for a while after. he didn't know why. he blamed low blood sugar.{/color}{/size}"
+    pause 1.2
 
     return
 
-
-## ── BAD ENDING 3 ─────────────────────────────────────────────────
-## Triggered if Y/N tells Aizawa everything in scene 3/4.
-## The truth destabilizes the world. She's removed from it.
 
 label ending_truth:
 
@@ -172,23 +139,13 @@ label ending_truth:
     pause 0.5
 
     aizawa "You know what happens."
-    pause 0.3
-
     yn "...Yes."
-    pause 0.4
-
     aizawa "To the students."
-    pause 0.3
-
     yn "...Yes."
-    pause 0.4
-
     aizawa "To me."
     pause 0.4
 
     yn "..."
-    pause 0.5
-
     yn "...Yes."
     pause 0.6
 
@@ -196,11 +153,10 @@ label ending_truth:
     aizawa "Then you understand why I can't let you stay."
     pause 0.5
 
-    thought "..."
-    thought "I knew this was a possibility."
-    thought "I knew it the moment I decided to say it."
-    thought "Some truths are too heavy for the world they land in."
-    pause 0.6
+    thought "i knew this was a possibility."
+    thought "i knew it the moment i decided to say it."
+    thought "some truths are too heavy for the world they land in."
+    pause 0.5
 
     yn "...I know."
     pause 0.4
@@ -208,24 +164,21 @@ label ending_truth:
     aizawa "I'm sorry."
     pause 0.4
 
-    thought "He means it."
-    thought "That's the thing about him."
-    thought "He always means it."
+    thought "he means it. that's the thing about him."
+    thought "he always means it."
     pause 0.5
 
     scene black
     with guilt_fade
 
-    thought "They found a way to send me back."
-    thought "Or somewhere."
-    thought "I'm not sure it's the same place."
-    thought "I'm not sure it matters."
-    pause 0.6
+    thought "they found a way to send me back."
+    thought "or somewhere. i'm not sure it's the same place."
+    thought "i'm not sure it matters."
+    pause 0.5
 
-    thought "I didn't get to say goodbye to him."
-    thought "He wouldn't have remembered it anyway."
-    thought "..."
-    thought "That doesn't make it better."
+    thought "i didn't get to say goodbye to him."
+    thought "he wouldn't have remembered it anyway."
+    thought "that doesn't make it better."
     pause 0.6
 
     scene black
@@ -233,9 +186,11 @@ label ending_truth:
 
     pause 1.5
 
-    centered "{size=28}{color=#888888}she told the truth.{/color}{/size}"
+    centered "{size=26}{color=#888888}ending: she told the truth.{/color}{/size}"
     pause 0.5
-    centered "{size=22}{color=#555555}the world couldn't hold it.{/color}{/size}"
-    pause 1.0
+    centered "{size=20}{color=#555555}the world couldn't hold it.{/color}{/size}"
+    pause 0.5
+    centered "{size=16}{color=#333344}nezu said 'fascinating' one more time on her way out. she did not find this comforting.{/color}{/size}"
+    pause 1.2
 
     return

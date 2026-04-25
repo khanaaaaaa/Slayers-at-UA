@@ -30,7 +30,6 @@ label mha_intro:
     scene black
     with hard_cut
 
-    thought "..."
     thought "I don't remember. I never remember that part."
     pause 0.8
 
@@ -44,7 +43,6 @@ label mha_intro:
     thought "...it's wrong."
     thought "No. It's just different."
     thought "You've seen worse. Haven't you?"
-    thought "..."
     thought "I don't remember."
     pause 0.8
 
@@ -70,6 +68,7 @@ label mha_intro:
             show muiquiet at center_char
             thought "He says it like it's a correction."
             thought "Like barely doesn't count as a qualifier."
+            thought "It absolutely counts as a qualifier."
 
         "Unfortunately.":
             yn "...Unfortunately."
@@ -80,6 +79,7 @@ label mha_intro:
             show muiquiet at center_char
             thought "He said it fast. Like it bothered him."
             thought "Like he didn't want it to."
+            thought "Interesting."
 
         "Yeah.":
             yn "...Yeah."
@@ -89,13 +89,14 @@ label mha_intro:
             hide muitalking
             show muiquiet at center_char
             thought "One word. Good."
-            thought "I don't know what to do with that."
+            thought "I've been through a dimensional rift and he said good."
+            thought "Okay."
 
     yn "...Where.. Where is this?"
     pause 0.3
 
     thought "The sky is too bright. It feels artificial."
-    thought "Like something built to look like sky."
+    thought "Like something built to look like sky rather than actual sky."
     thought "...Why do I know the difference."
     pause 0.6
 
@@ -107,6 +108,7 @@ label mha_intro:
 
     thought "That answer shouldn't scare me. But it does."
     thought "He always has something. And right now he has nothing."
+    thought "We're so cooked."
     pause 0.6
 
     show aizawa at left_char
@@ -127,9 +129,10 @@ label mha_intro:
             yn "..Where are we."
             aizawa "Safe. For now."
             aizawa "That's all you need to know right now."
-            thought "He says it like a professional. Measured. Controlled."
+            thought "He says it like a professional."
             thought "Like he's done this before."
             thought "Talked to people who woke up somewhere wrong."
+            thought "Which, honestly, probably."
 
         "Say nothing.":
             thought "I look at him. Dark clothes. Tired eyes."
@@ -137,6 +140,7 @@ label mha_intro:
             thought "I know who he is. I know his name. I know his quirk."
             thought "I know his students."
             thought "...Don't say any of that."
+            thought "That would be a weird thing to say."
 
     yn "..Who—"
     pause 0.3
@@ -165,10 +169,11 @@ label mha_intro:
     mui "I am. It's loud. Pointlessly loud."
     hide muitalking
     show muiquiet at center_char
+
     thought "He's not wrong."
     thought "There's a kid over there who just exploded something for fun."
-    thought "This is fine."
-    thought "Everything is fine."
+    thought "Nobody reacted. This is just normal here."
+    thought "This is fine. Everything is fine."
     pause 0.5
 
     yn "You're not even surprised?"
@@ -188,7 +193,8 @@ label mha_intro:
             hide muitalking
             show muiquiet at center_char
             thought "He doesn't argue when he's not sure."
-            thought "That's new. Or maybe it isn't."
+            thought "Which is new. Or maybe it isn't."
+            thought "I genuinely can't tell anymore."
 
         "You're right.":
             yn "...You're right."
@@ -199,10 +205,12 @@ label mha_intro:
             show muiquiet at center_char
             thought "There it is. That flat certainty."
             thought "I missed it. I didn't know I missed it until just now."
+            thought "That's embarrassing."
 
         "I don't know what I feel.":
             thought "Scared. Relieved. Both. Neither."
             thought "Something that doesn't have a name yet."
+            thought "Probably several somethings."
 
     aizawa "Aizawa. Pro Hero."
     aizawa "You collapsed in the middle of the street."
@@ -245,6 +253,7 @@ label mha_intro:
         "It's not a lie.":
             yn "...It's not a lie."
             aizawa "I know. That's what concerns me."
+            thought "Yeah. Me too."
 
         "We don't expect you to believe us.":
             yn "...We don't expect you to believe us."
@@ -253,11 +262,15 @@ label mha_intro:
             aizawa "You're not."
             aizawa "That's either very honest or very calculated."
             thought "Both."
+            thought "Mostly the first one though."
 
         "What would convince you.":
             yn "...What would convince you?"
             aizawa "Nothing right now."
             aizawa "But keep talking."
+            thought "He said keep talking."
+            thought "That's either a good sign or a trap."
+            thought "Probably both."
 
     scene black
     with Fade(0.8, 0.3, 0.8)
@@ -306,6 +319,7 @@ label mha_intro:
     thought "A place with no breathing rhythm."
     thought "He used to say those were the dangerous ones."
     thought "The ones that had already forgotten how to be alive."
+    thought "Cool. Great. We're in one of those."
     pause 0.6
 
     aizawa "You don't have anywhere to go."
@@ -319,6 +333,8 @@ label mha_intro:
             mui "No."
             hide muitalking
             show muiquiet at center_char
+            thought "We said no at the same time."
+            thought "That's either sweet or deeply sad."
 
         "Not here.":
             yn "...Not here."
@@ -327,6 +343,7 @@ label mha_intro:
             thought "Or maybe it does. I don't know."
             thought "I don't know if the KNY world still exists."
             thought "Or if I left it behind completely."
+            thought "I try not to think about that."
 
         "We had somewhere.":
             yn "...We had somewhere."
@@ -335,7 +352,9 @@ label mha_intro:
             mui "Past tense."
             hide muitalking
             show muiquiet at center_char
-            thought "He noticed. He always notices the small things. Even now."
+            thought "He noticed. He always notices the small things."
+            thought "Even now. Even without the memories."
+            thought "It's kind of annoying actually."
 
     aizawa "Then you're coming with me."
     pause 0.3
@@ -362,10 +381,12 @@ label mha_intro:
             thought "I look at him. He's already looking at me."
             thought "Not asking. Just waiting."
             thought "Like the decision is mine. It always was."
+            thought "No pressure or anything."
 
         "We don't have a choice.":
             thought "We don't have a choice. We never did."
             thought "Not really. The river took that from us."
+            thought "The river takes a lot of things."
 
     hide muiquiet
     show muitalking at center_char
@@ -401,6 +422,8 @@ label mha_intro:
             show muiquiet at center_char
             thought "Do I want to leave."
             thought "I don't know what I'd go back to."
+            thought "That's a question for later."
+            thought "Much later."
 
         "It's not so different.":
             yn "...It's not so different."
@@ -416,13 +439,15 @@ label mha_intro:
             hide muitalking
             show muiquiet at center_char
             thought "He's right. It is."
+            thought "I set a very low bar and he still cleared it."
 
         "I've been here before.":
             thought "I almost say it."
             thought "I know this gate. I know what's behind it."
             thought "I know the hallways. The classrooms. The names on the doors."
-            thought "..."
-            thought "I don't say it."
+            thought "I know which vending machine is broken on the second floor."
+            thought "I don't say any of that."
+            thought "That would be a lot to explain."
 
     scene black
     with Fade(0.8, 0.3, 0.8)
@@ -443,18 +468,24 @@ label mha_intro:
             nezu "How would you prefer I analyze it?"
             yn "...Like it happened to people. Not like a phenomenon."
             nezu "Fair. My apologies."
+            thought "He apologized."
+            thought "A small animal apologized to me."
+            thought "This world is something else."
 
         "What do you know about it.":
             yn "...What do you know about it."
             nezu "Very little. Which is precisely what makes it fascinating."
             nezu "Gaps in my knowledge are rare. And therefore interesting."
             thought "He knows almost everything. Almost."
+            thought "I know what fills the gap."
+            thought "I'm not going to tell him that."
 
         "Say nothing.":
             thought "I let him talk. He will anyway."
             thought "Talks. Observes. Files things away."
             thought "I know that about him."
             thought "I know too much about all of them."
+            thought "It's exhausting."
 
     show muiquiet at left_char
     with dissolve
@@ -474,6 +505,13 @@ label mha_intro:
     show muiquiet at left_char
 
     nezu "Oh my!"
+    pause 0.3
+
+    thought "He said oh my."
+    thought "Like a small animal just did something delightful."
+    thought "We told him we fell through a dimensional rift."
+    thought "He said oh my."
+    thought "I don't know what I expected."
     pause 0.6
 
     scene bg classroom at bg_fit
@@ -517,24 +555,26 @@ label mha_intro:
         "Watch their faces.":
             thought "Mina — delighted."
             thought "Denki — terrified and excited at the same time."
-            thought "Iida — already composing a formal complaint."
+            thought "Iida — already composing a formal complaint in his head."
             thought "Bakugo — suspicious."
-            thought "Izuku — writing in his notebook."
-            thought "..."
+            thought "Izuku — writing in his notebook. He's been writing since we walked in."
             thought "I know all of them. Every single one."
             thought "And none of them know me."
+            thought "That's a weird feeling."
 
         "Look at Muichiro.":
             thought "He's looking at the class. Cataloguing."
             thought "Threat assessment. Old habit."
-            thought "He doesn't know that's what he's doing. But I do."
+            thought "He doesn't know that's what he's doing."
+            thought "But I do."
+            thought "Twenty people. He's already ranked them."
 
         "Look at the room.":
             thought "Third floor. Twenty seats."
             thought "Exactly where I knew they'd be."
-            thought "..."
             thought "I've never been here before."
             thought "I shouldn't know any of this."
+            thought "And yet."
 
     thought "I know this place. Not from being here."
     thought "From somewhere else. Like I've seen it before."

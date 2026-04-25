@@ -54,21 +54,21 @@ menu:
             centered "{size=18}{color=#444455}(this is the most painful route. congratulations.){/color}{/size}"
             pause 1.0
 
-        "the one who says too much at the wrong time.":
+    "The one who says too much at the wrong time.":
             $ route = "loud"
             centered "{size=20}{color=#7ecac3}noted. you will cause several problems.{/color}{/size}"
             pause 0.8
             centered "{size=18}{color=#444455}(some of them are funny. most of them are not.){/color}{/size}"
             pause 1.0
 
-        "the one who is just trying to get through the day.":
+    "The one who is just trying to get through the day.":
             $ route = "normal"
             centered "{size=20}{color=#7ecac3}noted. relatable. valid. good luck.{/color}{/size}"
             pause 0.8
             centered "{size=18}{color=#444455}(you will not have good luck.){/color}{/size}"
             pause 1.0
 
-        "the one who read the manga and thinks they know everything.":
+    "The one who read the manga and thinks they know everything.":
             $ route = "meta"
             centered "{size=20}{color=#7ecac3}noted. you do know everything.{/color}{/size}"
             pause 0.8
