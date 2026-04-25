@@ -1,81 +1,85 @@
-centered "{size=22}{color=#555566}loading your problems...{/color}{/size}"
-pause 0.7
+default route = "normal"
 
-centered "{size=22}{color=#555566}wow. that's... a lot.{/color}{/size}"
-pause 0.9
+label game_intro:
 
-centered "{size=22}{color=#555566}loading his memory issues...{/color}{/size}"
-pause 0.8
+    scene black
+    with hard_cut
 
-centered "{size=22}{color=#555566}...oh he has none. great. awesome. love that for us.{/color}{/size}"
-pause 1.0
+    pause 0.5
 
-centered "{size=22}{color=#555566}loading one (1) sword...{/color}{/size}"
-pause 0.6
+    centered "{size=22}{color=#555566}Loading your problems...{/color}{/size}"
+    pause 0.7
 
-centered "{size=22}{color=#555566}loading zero (0) explanations...{/color}{/size}"
-pause 0.8
+    centered "{size=22}{color=#555566}Wow. That's... a lot.{/color}{/size}"
+    pause 0.9
 
-centered "{size=22}{color=#555566}so we're just doing things now. no context. just vibes.{/color}{/size}"
-pause 1.0
+    centered "{size=22}{color=#555566}Loading his memory issues...{/color}{/size}"
+    pause 0.8
 
-centered "{size=22}{color=#aa4444}warning: plot coherence critically low{/color}{/size}"
-pause 0.9
+    centered "{size=22}{color=#555566}Loading one (1) sword...{/color}{/size}"
+    pause 0.6
 
-centered "{size=22}{color=#555566}don't worry. i'm sure it'll fix itself. it never does, but like... optimism.{/color}{/size}"
-pause 1.2
+    centered "{size=22}{color=#555566}Loading zero (0) explanations...{/color}{/size}"
+    pause 0.8
 
+    centered "{size=22}{color=#555566}So we're just doing things now.{/color}{/size}"
+    pause 1.0
 
-scene black
-with hard_cut
+    centered "{size=22}{color=#aa4444}Warning: plot coherence critically low{/color}{/size}"
+    pause 0.9
 
-pause 0.5
+    centered "{size=22}{color=#555566}Don't worry. I'm sure it'll fix itself. It never does, but like... optimism.{/color}{/size}"
+    pause 1.2
 
+    scene black
+    with hard_cut
 
-centered "{size=30}{color=#7ecac3}slayers at UA{/color}{/size}"
-pause 0.4
+    pause 0.5
 
-centered "{size=20}{color=#444455}a visual novel about memory loss, bad decisions,{/color}{/size}"
-pause 0.3
+    centered "{size=30}{color=#7ecac3}Slayers at UA{/color}{/size}"
+    pause 0.4
 
-centered "{size=20}{color=#444455}and a crossover nobody approved but we're here anyway{/color}{/size}"
-pause 0.6
+    centered "{size=20}{color=#444455}A visual novel about memory loss{/color}{/size}"
+    pause 0.3
 
-centered "{size=26}{color=#aaaacc}Before we begin{/color}{/size}"
-pause 0.6
-centered "{size=22}{color=#666677}Who are you in this situation?{/color}{/size}"
-pause 0.8
+    centered "{size=20}{color=#444455}And a crossover nobody approved but we're here anyway{/color}{/size}"
+    pause 0.6
 
-menu:
-    "The one who knows too much and says nothing.":
-        $ route = "silent"
-        centered "{size=20}{color=#7ecac3}noted. you will suffer quietly and with dignity.{/color}{/size}"
+    centered "{size=26}{color=#aaaacc}But, before we begin...{/color}{/size}"
+    pause 0.6
+    centered "{size=22}{color=#666677}...Who are you in this situation?{/color}{/size}"
+    pause 0.8
+
+    menu:
+        "The one who knows too much and says nothing.":
+            $ route = "silent"
+            centered "{size=20}{color=#7ecac3}Noted. You will suffer quietly and with dignity.{/color}{/size}"
             pause 0.8
-            centered "{size=18}{color=#444455}(this is the most painful route. congratulations.){/color}{/size}"
+            centered "{size=18}{color=#444455}(This is the most painful route. Congratulations!){/color}{/size}"
             pause 1.0
 
-    "The one who says too much at the wrong time.":
+        "The one who says too much at the wrong time.":
             $ route = "loud"
-            centered "{size=20}{color=#7ecac3}noted. you will cause several problems.{/color}{/size}"
+            centered "{size=20}{color=#7ecac3}Noted! You will cause several problems!{/color}{/size}"
             pause 0.8
-            centered "{size=18}{color=#444455}(some of them are funny. most of them are not.){/color}{/size}"
+            centered "{size=18}{color=#444455}(Some of them are funny, most of them are not.){/color}{/size}"
             pause 1.0
 
-    "The one who is just trying to get through the day.":
+        "The one who is just trying to get through the day.":
             $ route = "normal"
-            centered "{size=20}{color=#7ecac3}noted. relatable. valid. good luck.{/color}{/size}"
+            centered "{size=20}{color=#7ecac3}Valid. Good Luck!{/color}{/size}"
             pause 0.8
-            centered "{size=18}{color=#444455}(you will not have good luck.){/color}{/size}"
+            centered "{size=18}{color=#444455}(You will not have good luck.){/color}{/size}"
             pause 1.0
 
-    "The one who read the manga and thinks they know everything.":
+        "The one who read the manga and thinks they know everything.":
             $ route = "meta"
-            centered "{size=20}{color=#7ecac3}noted. you do know everything.{/color}{/size}"
+            centered "{size=20}{color=#7ecac3}Noted. You do know everything.{/color}{/size}"
             pause 0.8
-            centered "{size=18}{color=#444455}(it won't help.){/color}{/size}"
+            centered "{size=18}{color=#444455}(It won't help.){/color}{/size}"
             pause 1.0
 
-scene black
+    scene black
     with hard_cut
 
     pause 0.5

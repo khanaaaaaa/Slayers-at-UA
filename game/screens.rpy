@@ -1,11 +1,4 @@
 ﻿################################################################################
-## Initialization
-################################################################################
-
-init offset = -1
-
-
-################################################################################
 ## Styles
 ################################################################################
 
@@ -188,55 +181,6 @@ style choice_button_text is default:
     size 31
     outlines [(1, "#00000077", 0, 0)]
 
-## Make the namebox available for styling through the Character object.
-init python:
-    config.character_id_prefixes.append('namebox')
-
-style window is default
-style say_label is default
-style say_dialogue is default
-style say_thought is say_dialogue
-
-style namebox is default
-style namebox_label is say_label
-
-
-style window:
-    xalign 0.5
-    xfill True
-    yalign gui.textbox_yalign
-    ysize gui.textbox_height
-    background Frame("gui/textbox.png", xalign=0.5, yalign=1.0)
-    padding (40, 36, 40, 36)
-
-style namebox:
-    xpos gui.name_xpos
-    xanchor gui.name_xalign
-    xsize gui.namebox_width
-    ypos gui.name_ypos
-    ysize gui.namebox_height
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
-    padding (12, 6, 12, 6)
-
-style say_label:
-    properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
-    yalign 0.5
-    color "#e8e8f0"
-    size gui.name_text_size
-    outlines [(2, "#00000088", 0, 0)]
-
-style say_dialogue:
-    properties gui.text_properties("dialogue")
-    xpos gui.dialogue_xpos
-    xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
-    adjust_spacing False
-    color "#e8e8f0"
-    size gui.text_size
-    line_spacing 8
-    outlines [(1, "#00000066", 0, 0)]
-
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
@@ -272,50 +216,12 @@ style input:
     xmaximum gui.dialogue_width
 
 
-## Choice screen ###############################################################
-##
-## This screen is used to display the in-game choices presented by the menu
-## statement. The one parameter, items, is a list of objects, each with caption
-## and action fields.
-##
-## https://www.renpy.org/doc/html/screen_special.html#choice
-
-screen choice(items):
-    style_prefix "choice"
-
-    vbox:
-        for i in items:
-            textbutton i.caption action i.action
-
-
-style choice_vbox is vbox
-style choice_button is button
-style choice_button_text is button_text
-
-style choice_vbox:
-    xalign 0.5
-    ypos 405
-    yanchor 0.5
-    spacing gui.choice_spacing
-
-style choice_button is default:
-    properties gui.button_properties("choice_button")
-    background Frame("gui/button/choice_idle_background.png", gui.choice_button_borders)
-    hover_background Frame("gui/button/choice_hover_background.png", gui.choice_button_borders)
-    padding (30, 12, 30, 12)
-
-style choice_button_text is default:
-    properties gui.text_properties("choice_button")
-    color "#aaaacc"
-    hover_color "#e8e8ff"
-    size 32
-    outlines [(1, "#00000088", 0, 0)]
-
-
 ## Quick Menu screen ###########################################################
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
+
+default quick_menu = True
 
 screen quick_menu():
 
@@ -341,9 +247,8 @@ screen quick_menu():
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
 init python:
-    config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
+    if "quick_menu" not in config.overlay_screens:
+        config.overlay_screens.append("quick_menu")
 
 style quick_menu is hbox
 style quick_button is default

@@ -19,71 +19,72 @@ label prologue_start:
 
     play music "memory_theme.mp3" fadein 2.5
 
-    show youngynquiet at right_char
+    show youngynquiet at center_char
     with dissolve
 
     thought "He'll come from the left. He always does."
     pause 0.4
 
-    show muiquiet at left_char
+    hide youngynquiet
+    show muiquiet at center_char
     with dissolve
 
     thought "...See."
     pause 0.6
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "You came again."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     thought "Don't say his name. You're not supposed to know it yet."
     pause 0.6
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...Don't people usually say their names?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide youngynquiet
-    show youngyntalkingg at right_char
+    show youngyntalking at center_char
     "Usually."
     "Do you want to know mine?"
-    hide youngyntalkingg
-    show youngynquiett at right_char
+    hide youngyntalking
+    show youngynquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "I don't know."
     mui "...You come here a lot."
     mui "It feels strange not calling you anything."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
-    hide youngynquiett
-    show youngyntalkingg at right_char
+    hide youngynquiet
+    show youngyntalking at center_char
     "...Then what would you call me?"
-    hide youngyntalkingg
-    show youngynquiett at right_char
+    hide youngyntalking
+    show youngynquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...I haven't decided yet. Something that fits."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
-    hide youngynquiett
-    show youngyntalkingg at right_char
+    hide youngynquiet
+    show youngyntalking at center_char
     "That sounds like a lot of pressure."
-    hide youngyntalkingg
-    show youngynquiett at right_char
+    hide youngyntalking
+    show youngynquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...You'll probably disappear before I figure it out anyway."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     thought "He says that every time."
     thought "..."
@@ -91,20 +92,20 @@ label prologue_start:
     thought "How many times have we done this?"
     pause 0.8
 
-    hide youngynquiett
-    show youngyntalkingg at right_char
+    hide youngynquiet
+    show youngyntalking at center_char
     "Then maybe you should hurry."
-    hide youngyntalkingg
-    show youngynquiett at right_char
+    hide youngyntalking
+    show youngynquiet at center_char
 
     mui "..."
     pause 0.5
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...Then tell me."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     $ player_name = renpy.input("What is your name?", length=20)
     $ player_name = player_name.strip()
@@ -112,45 +113,45 @@ label prologue_start:
         $ player_name = "Player"
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...[player_name]."
     mui "I'll remember it."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     thought "He won't. He never does."
     thought "But I keep telling him anyway."
     pause 0.8
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...Why do you always stand in the same place?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide youngynquiett
-    show youngyntalkingg at right_char
+    show youngyntalkingg at center_char
     yn "Why do you always pretend not to look?"
     hide youngyntalkingg
-    show youngynquiett at right_char
+    show youngynquiett at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...You're not from here."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide youngynquiett
-    show youngyntalkingg at right_char
+    show youngyntalkingg at center_char
     yn "No. But neither are you."
     hide youngyntalkingg
-    show youngynquiett at right_char
+    show youngynquiett at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...What does that mean?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     thought "It means—"
     pause 0.2
@@ -168,79 +169,79 @@ label prologue_start:
     scene bg forest_sunset at bg_fit
     with soft_dissolve
 
-    show muiquiet at left_char
-    show youngynquiett at right_char
+    show muiquiet at center_char
+    show youngynquiet at center_char
 
     thought "What was that. Instinct. Probably."
     pause 0.6
 
     hide youngynquiett
-    show youngyntalkingg at right_char
+    show youngyntalking at center_char
     yn "It means... you shouldn't be this calm."
     yn "Not with demons this close."
-    hide youngyntalkingg
-    show youngynquiett at right_char
+    hide youngyntalking
+    show youngynquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...Demons? You're the second person to say that."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide youngynquiett
-    show youngyntalkingg at right_char
+    show youngyntalkingg at center_char
     yn "Second?"
     hide youngyntalkingg
-    show youngynquiett at right_char
+    show youngynquiett at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...My brother. He says things like that."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     thought "Yuichiro. Protective. Harsh. Loves Muichiro more than he can say."
     thought "...How do I know that."
     pause 0.6
 
     hide youngynquiett
-    show youngyntalkingg at right_char
+    show youngyntalkingg at center_char
     yn "Then you should listen to him."
     hide youngyntalkingg
-    show youngynquiett at right_char
+    show youngynquiett at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...I wanted to hear it from someone else."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide youngynquiett
-    show youngyntalkingg at right_char
+    show youngyntalkingg at center_char
     yn "You're strange."
     hide youngyntalkingg
-    show youngynquiett at right_char
+    show youngynquiett at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...I get that a lot."
     pause 0.4
     mui "...Should I trust you?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     menu:
         "...Yes. I think you should.":
             hide muiquiet
-            show muitalking at left_char
+            show muitalking at center_char
             mui "...Okay."
             hide muitalking
-            show muiquiet at left_char
+            show muiquiet at center_char
             hide youngynquiett
-            show youngyntalkingg at right_char
+            show youngyntalkingg at center_char
             yn "That was easier than I expected."
             hide youngyntalkingg
-            show youngynquiett at right_char
+            show youngynquiett at center_char
             if route == "meta":
                 thought "It always is. I've read this part."
                 thought "He says okay. Then he forgets."
@@ -250,10 +251,10 @@ label prologue_start:
 
         "...I don't know yet. But I'm still here.":
             hide muiquiet
-            show muitalking at left_char
+            show muitalking at center_char
             mui "...Yeah. That makes sense."
             hide muitalking
-            show muiquiet at left_char
+            show muiquiet at center_char
             if route == "loud":
                 thought "I almost said something else."
                 thought "Something embarrassing."
@@ -264,10 +265,10 @@ label prologue_start:
 
         "...No. But I'll stay anyway.":
             hide muiquiet
-            show muitalking at left_char
+            show muitalking at center_char
             mui "...Right. ...I figured."
             hide muitalking
-            show muiquiet at left_char
+            show muiquiet at center_char
             if route == "silent":
                 thought "He says it like he expected it."
                 thought "Like he's been told no before. By me."
@@ -278,57 +279,57 @@ label prologue_start:
 
     pause 0.5
 
-    hide youngynquiett
-    show youngyntalkingg at right_char
+    hide youngynquiet
+    show youngyntalking at center_char
     yn "Then listen carefully."
     yn "If something feels wrong..."
     yn "...run."
     hide youngyntalkingg
-    show youngynquiett at right_char
+    show youngynquiett at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...Do I need to?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide youngynquiett
-    show youngyntalkingg at right_char
+    show youngyntalkingg at center_char
 
     menu:
         "Yes. Promise me.":
             yn "Yes. Promise me."
             hide youngyntalkingg
-            show youngynquiett at right_char
+            show youngynquiett at center_char
             hide muiquiet
-            show muitalking at left_char
+            show muitalking at center_char
             mui "...Okay."
             hide muitalking
-            show muiquiet at left_char
+            show muiquiet at center_char
             thought "He says it like it's nothing."
             thought "He doesn't know what it costs me to ask."
 
         "Yes. Even if you think you don't.":
             yn "Yes. Even if you think you don't."
             hide youngyntalkingg
-            show youngynquiett at right_char
+            show youngynquiett at center_char
             hide muiquiet
-            show muitalking at left_char
+            show muitalking at center_char
             mui "...That's a strange way to say it."
             hide muitalking
-            show muiquiet at left_char
+            show muiquiet at center_char
             thought "I know. Because I know he won't."
             thought "And I'm asking anyway."
 
         "Just... please.":
             yn "Just... please."
             hide youngyntalkingg
-            show youngynquiett at right_char
+            show youngynquiett at center_char
             hide muiquiet
-            show muitalking at left_char
+            show muitalking at center_char
             mui "...Okay."
             hide muitalking
-            show muiquiet at left_char
+            show muiquiet at center_char
             thought "He looks at me differently when I say please."
             thought "Like he didn't expect me to need something."
 
@@ -338,94 +339,94 @@ label prologue_start:
     thought "And I still can't stop it."
     pause 1.0
 
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
     with dissolve
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "...So this is where you've been disappearing to."
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...You followed me?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "You're not subtle."
     yuichiro "You leave at the same time every day."
     yuichiro "...And come back oddly calm. Talking to someone?"
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...I was just—"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "...Or staring again? Who's the ghost?"
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...They're not a ghost."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "Mm. ...You gave them that look."
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...What look?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "Like you're trying to memorize them before they're gone."
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     mui "..."
     pause 0.6
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "...You like them?"
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...I don't think that's it."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "So you {i}do{/i} think about it."
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...You're annoying."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "...You're obvious."
     hide yuichirotalking
 
@@ -445,24 +446,24 @@ label prologue_start:
     play sound "distant_scream.wav"
     pause 0.5
 
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     mui "...?"
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "Stay here. Don't move."
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...What was that?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "...Inside."
     hide yuichirotalking
 
@@ -476,35 +477,35 @@ label prologue_start:
     thought "...Don't."
     pause 0.6
 
-    show muiquiet at left_char
+    show muiquiet at center_char
     with dissolve
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...It smells strange."
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
     with dissolve
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "...Don't look."
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...Why?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "...Just don't."
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     thought "...But he does."
     pause 0.4
@@ -530,10 +531,10 @@ label prologue_start:
     thought "No. Not that. Not yet."
     pause 0.8
 
-    show muiquiet at left_char
+    show muiquiet at center_char
     with dissolve
 
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
     with dissolve
 
     mui "..."
@@ -541,19 +542,19 @@ label prologue_start:
     pause 0.4
 
     hide yuichiroquiet
-    show yuichirotalking at right_char
+    show yuichirotalking at center_char
     yuichiro "...I said don't look."
     hide yuichirotalking
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
 
     hide muiquiet
-    show muitalking at left_char
+    show muitalking at center_char
     mui "...Why aren't they moving?"
     hide muitalking
-    show muiquiet at left_char
+    show muiquiet at center_char
 
     hide yuichiroquiet
-    show yuichiroquiet at right_char
+    show yuichiroquiet at center_char
     yuichiro "Because they're—"
 
     stop sound

@@ -9,9 +9,10 @@ transform right_char:
     xalign 0.88
     yalign 1.0
 transform center_char:
-    zoom 1.8
+    zoom 2.0
     xalign 0.5
     yalign 1.0
+    yoffset 320
 transform left_char_ghost:
     zoom 1.8
     xalign 0.18
