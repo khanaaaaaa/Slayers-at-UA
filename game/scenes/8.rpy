@@ -13,27 +13,27 @@ label epilogue_scene:
     thought "And I think — I think that might be okay."
     pause 0.6
 
-    show muiquiet at center_char
+    show muichiroquiet at center_char
     with dissolve
 
     thought "He's still here. He keeps being here."
     thought "Even when he forgets. He comes back."
     pause 0.5
 
-    hide muiquiet
-    show muitalking at center_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "...What are you thinking about."
-    hide muitalking
-    show muiquiet at center_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     yn "...Endings."
     pause 0.3
 
-    hide muiquiet
+    hide muichiroquiet
     show muitalking at center_char
     mui "Do you know how this one goes."
-    hide muitalking
-    show muiquiet at center_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     thought "No. For the first time. No."
     pause 0.5
@@ -41,11 +41,11 @@ label epilogue_scene:
     yn "...No. Not this one."
     pause 0.4
 
-    hide muiquiet
-    show muitalking at center_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "Good."
-    hide muitalking
-    show muiquiet at center_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     pause 0.6
 
@@ -58,20 +58,28 @@ label epilogue_scene:
     thought "And for now — that's enough."
     pause 0.6
 
-    show ochako at right_char
+    hide muichiroquiet
+    show ochakotalking at center_char
     with dissolve
 
     ochako "There you two are!"
     ochako "Aizawa-sensei's been looking for you."
     ochako "Training starts in ten minutes."
-    pause 0.3
+    hide ochacotalking
+    show ochacoquiet at center_char
 
     thought "Right. The world keeps moving."
     thought "Even when you're not ready."
     pause 0.4
 
+    hide ochacoquiet 
+    show yntalking at center_char
+
     yn "...We'll be right down."
     pause 0.3
+
+    hide yntalking
+    show ochacotalking at center_char
 
     ochako "Okay!"
     ochako "..."
@@ -79,8 +87,14 @@ label epilogue_scene:
     ochako "More... present."
     pause 0.4
 
+    hide ochacotalking
+    show ochacoquiet at center_char
+
     thought "She noticed. Of course she noticed."
     pause 0.4
+
+    hide ochacoquiet
+    show yntalking at center_char
 
     yn "...Thanks."
     pause 0.4
@@ -89,39 +103,47 @@ label epilogue_scene:
 
     pause 0.5
 
-    hide muiquiet
-    show muitalking at center_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "...Sparrow."
-    hide muitalking
-    show muiquiet at center_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     thought "..."
     thought "He said it. On his own. Without me asking."
     pause 0.5
 
+    hide muichiroquiet
+    show yntalking at center_char
+
     yn "...Yeah?"
     pause 0.4
 
-    hide muiquiet
-    show muitalking at center_char
+    hide yntalking
+    show muichiroquiet at center_char
     mui "..."
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "Don't disappear."
-    hide muitalking
-    show muiquiet at center_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     pause 0.8
 
     thought "...I'll try."
     pause 0.5
 
+    hide muichiroquiet
+    show yntalking at center_char
+
     yn "...I'll try."
     pause 0.6
 
-    hide muiquiet
-    show muitalking at center_char
+    hide yntalking
+    show muichirotalking at center_char
     mui "That's enough."
-    hide muitalking
-    show muiquiet at center_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     pause 0.8
 
@@ -142,6 +164,7 @@ label epilogue_scene:
     thought "..."
     thought "I think that counts for something."
     pause 1.0
+    hide muichiroquiet
 
     scene black
     with end_fade

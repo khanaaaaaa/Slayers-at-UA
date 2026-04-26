@@ -110,16 +110,22 @@ label mha_intro:
     thought "He always has something. And right now he has nothing."
     thought "We're so cooked."
     pause 0.6
+    hide muiquiet
 
-    show aizawa at left_char
+    show aizawatalking at center_char
     with dissolve
 
     aizawa "..You two are finally awake."
     pause 0.4
 
+    show ynquiet
+
     menu:
         "How long were we out.":
+            hideaizawa
+
             yn "..How long were we out?"
+
             aizawa "Three hours. Give or take."
             thought "Three hours. That's nothing."
             thought "I've been out longer after worse."
