@@ -14,14 +14,11 @@ label arrival_scene:
     nezu "And swords."
     pause 0.4
 
-    show muiquiet at left_char
-    with dissolve
-
-    hide muiquiet
-    show muitalking at left_char
+    hide nezu
+    show muichirotalking at center_char
     mui "The swords are ours."
-    hide muitalking
-    show muiquiet at left_char
+    hide muichirotalking
+    show nezu at center_char
 
     nezu "Yes, I gathered."
     nezu "What I haven't gathered is where you came from."
@@ -29,8 +26,12 @@ label arrival_scene:
 
     menu:
         "We don't know.":
+            hide nezu
+            show yntalking to at center_char
             yn "...We don't know."
             nezu "Fascinating. You say that with complete sincerity."
+            hide yntalking
+            show ynquiet at center_char
             thought "Because it's true."
             thought "I know where I came from. I just don't know how to say it."
             thought "And I don't know if saying it would make things better."
@@ -38,68 +39,107 @@ label arrival_scene:
             thought "Probably worse."
 
         "Somewhere you've never heard of.":
+            hide nezu
+            show yntalking at center_char
             yn "...Somewhere you've never heard of."
+            hide yntalking
+            show nezu at center_char
             nezu "I've heard of quite a lot of places."
+            hide nezu
+            show yntalking at center_char
             yn "Not this one."
+            hide yntalking
+            show nezu at center_char
             nezu "That's either very honest or very evasive."
+            hide nezu
+            show ynquiet at center_char
             thought "Both. Definitely both."
             thought "I'm very good at both."
 
         "Somewhere that doesn't exist here.":
+            hide nezu
+            show yntalking at center_char
             yn "...Somewhere that doesn't exist here."
+            hide yntalking
+            show nezu at center_char
             nezu "Now that is interesting."
             nezu "Most people who don't want to answer say they don't remember."
             nezu "You said it doesn't exist."
             nezu "That's a very specific kind of answer."
+            hide nezu
+            show ynquiet at center_char
             thought "He noticed. Of course he noticed."
             thought "He notices everything."
             thought "I hate that about him."
             thought "Respectfully."
 
         "Ask Muichiro.":
+            hide nezu
+            show yntalking at center_char
             yn "...Ask him."
-            hide muiquiet
-            show muitalking at left_char
+            hide yntalking
+            show muichirotalking at center_char
             mui "We were fighting a demon. Then we were here."
             mui "That's all I know."
-            hide muitalking
-            show muiquiet at left_char
+            hide muichirotalking
+            show nezu at center_char
             nezu "Concise. I appreciate that."
+            hide nezu
+            show ynquiet at center_char
             thought "He gave the most accurate answer possible."
             thought "And somehow it sounds insane."
 
+    hide ynquiet
+    show nezu at center_char
     nezu "You'll stay here for now. Under observation."
     nezu "Aizawa will supervise."
     pause 0.3
-
-    show aizawa at right_char
-    with dissolve
-
+    hide nezu
+    show aizawaquiet at center_char
     aizawa "..."
+    hide aizawaquiet
+    show aizawatalking at center_char
     aizawa "Lucky me."
     pause 0.4
+    hide aizawatalking
+    show nezu at center_char
 
     nezu "You'll attend classes. Integrate."
     nezu "And hopefully not destabilize anything."
     pause 0.3
+
+    hide nezu
+    show muichiroquiet at center_char
 
     thought "...Too late."
     pause 0.6
 
     menu:
         "We'll try.":
+            hide muichiroquiet
+            show yntalking at center_char
             yn "...We'll try."
+            hide yntalking
+            show nezu at center_char
             nezu "That's all I ask."
+            hide nezu 
+            show aizawatalking at center_char
             aizawa "It's not. But it's a start."
-            thought "Aizawa said it's not."
-            thought "He's right."
-            thought "But I appreciate the participation trophy."
+            hide aizawatalking
+            show aizawaquiet at center_char
+            thought "I appreciate the participation trophy."
 
         "What does integrate mean exactly.":
+            hide muichiroquiet
+            show yntalking at center_char
             yn "...What does integrate mean exactly."
+            hide yntalking
+            show nezu at center_char
             nezu "Attend classes."
             nezu "Don't use your swords on students."
             nezu "Try not to know things you shouldn't know."
+            hide nezu
+            show aizawaquiet at center_char
             thought "That last one."
             thought "He said it casually."
             thought "But he was looking at me when he said it."
@@ -107,15 +147,25 @@ label arrival_scene:
             thought "Either way I'm going to pretend I didn't notice."
 
         "What if we can't.":
+            hide muichiroquiet
+            show muichirotalking at center_char
             yn "...What if we can't."
+            hide yntalking
+            show nezu at center_char
             nezu "Then we'll deal with that when it happens."
             nezu "I find it's better not to borrow trouble."
+            hide nezu
+            show aizawatalking at center_char
             aizawa "You're already trouble. Both of you."
+            hide aizawatalking
+            show aizawaquiet at center_char
             thought "He said both of you."
-            thought "Muichiro looked mildly offended."
+            thought "Muichiro looks mildly offended."
             thought "Which is the most emotion I've seen from him today."
 
         "Say nothing.":
+            hide muichiroquiet
+            show aizawaquiet at center_char
             thought "I don't say anything."
             thought "Because I know exactly what's coming."
             thought "And I don't know if I can stop it."
@@ -123,9 +173,7 @@ label arrival_scene:
             thought "Or if stopping it would make things worse."
             thought "Probably worse."
 
-    hide nezu
-    hide aizawa
-
+    hide aizawaquiet
     scene black
     with soft_dissolve
 
@@ -140,128 +188,166 @@ label arrival_scene:
     scene bg classroom at bg_fit
     with slow_dissolve
 
-    show aizawa at left_char
+    show aizawatalking at center_char
     with dissolve
 
     aizawa "Two transfer students."
     aizawa "They'll be joining Class 1A temporarily."
     aizawa "Don't make it weird."
     pause 0.4
-
-    show muiquiet at right_char
+    hide aizawatalking
+    show muiquiet at center_char
     with dissolve
 
+    hide muiquiet
+    show minatalking at center_char
     mina "Oh wow. Are those real swords?"
+    hide minatalking
+    show denkitalking at center_char
     denki "That's so cool—"
+    hide denkitalking
+    show iidatalking at center_char
     iida "Please refrain from bringing weapons onto school grounds without prior authorization—"
     pause 0.3
-
     thought "Iida has been talking for thirty seconds."
     thought "Muichiro has not blinked once."
-    thought "I think Iida is scared but doesn't know it yet."
+    thought "I think Iida is kinda intimidated byt that."
     pause 0.4
+    hide iidatalking
+    show bakugotalking at center_char
 
     bakugo "Tch. What are they even doing here."
     pause 0.3
+    hide bakugotalking
+    show bakugoquiet at center_char
 
-    thought "There he is. Exactly where I knew he'd be."
+    thought "There he is, exactly where I knew he'd be."
     thought "Exactly as loud as I knew he'd be."
-    thought "...Don't react. Don't let them see that you know them."
+    thought "...Don't let them see that you know them."
     pause 0.6
+    hide bakugoquiet
+    show yntalking at center_char
 
     yn "My name is [player_name]."
     pause 0.4
 
-    hide muiquiet
-    show muitalking at right_char
+    hide yntalking
+    show muichirotalking at center_char
     mui "Muichiro Tokito."
     mui "Mist Hashira."
     mui "Former."
-    hide muitalking
-    show muiquiet at right_char
+    hide muichirotalking
+    show kirishimatalking at center_char
 
     kirishima "That's seriously manly!"
     pause 0.3
 
-    hide muiquiet
-    show muitalking at right_char
+    hide kirishimatalking
+    show muichirotalking at right_char
     mui "I don't know what that means."
-    hide muitalking
-    show muiquiet at right_char
+    hide muichirotalking
+    show muichiroquiet at right_char
 
     thought "He genuinely doesn't."
     thought "I watched him stare at a vending machine for forty seconds yesterday."
-    thought "He didn't buy anything. He just left."
     thought "I don't know what he was thinking about."
     thought "I never know what he's thinking about."
-    thought "That's new."
+    thought "He's so weird."
     pause 0.5
 
-    izuku "Your breathing form earlier — I've never seen anything like it."
+    hide muichiroquiet
+    show dekutalking at center_char
+
+    izuku "Your breathing form earlier... I've never seen anything like it."
     izuku "Is it a quirk? Or a technique?"
     pause 0.3
+    hide dekutalking
+    show dekuquiet at center_char
+
 
     menu:
         "It's a technique.":
-            hide muiquiet
-            show muitalking at right_char
+            hide dekuquiet
+            show muichirotalking at center_char
             mui "Technique. Quirks don't exist where we're from."
-            hide muitalking
-            show muiquiet at right_char
+            hide muichirotalking
+            show dekutalking at center_char
             izuku "Where you're from—"
             thought "Don't. Don't ask. Please don't ask."
+            hide dekutalking
+            show aizawatalking at center_char
             aizawa "That's enough. Sit down."
+            hide aizawatalking
+            show aizawaquiet at center_char
             thought "...Thank you."
             thought "I owe Aizawa one."
 
         "Something like a quirk.":
+            hide dekuquiet
+            show yntalking at center_char
             yn "...Something like a quirk. But older. And it costs more."
+            hide yntalking
+            show dekutalking at center_char
             izuku "Costs more how?"
+            hide dekutalking
+            show dekuquiet at center_char
             thought "How do I explain that pain is a teacher."
             thought "That scars are a curriculum."
             thought "That you breathe until your lungs feel like they're tearing"
             thought "and then you breathe harder."
+            hide dekuquiet
+            show yntalking at center_char
             yn "...It's hard to explain."
+            hide yntalking
+            show dekutalking at center_char
             izuku "I'd love to hear it sometime."
+            hide dekutalking
+            show aizawaquiet at center_char
             thought "He means it. He always means it."
             thought "He's going to write a twelve-page analysis."
             thought "I'm going to be in it."
 
         "Let Muichiro answer.":
+            hide dekuquiet
+            show muichirotalking at center_char
             yn "...Ask him."
-            hide muiquiet
-            show muitalking at right_char
+            hide muichiroquiet
+            show muitalking at center_char
             mui "Total Concentration Breathing."
             mui "You push oxygen through your entire body."
-            mui "It enhances speed, strength, and perception."
+            mui "It enhances speedand strength."
             mui "Anyone can learn it."
             mui "Most people don't survive the training."
-            hide muitalking
-            show muiquiet at right_char
+            hide muichirotalking
+            show denki at center_char
             denki "...Most people don't survive?"
-            hide muiquiet
-            show muitalking at right_char
+            hide denki
+            show muichirotalking at center_char
             mui "Correct."
-            hide muitalking
-            show muiquiet at right_char
+            hide muichirotalking
+            show aizawaquiet at center_char
             thought "He says it like it's a weather report."
             thought "Most people don't survive. Correct."
             thought "Denki looks like he's reconsidering his life choices."
             thought "Good."
 
         "Stay quiet.":
+            hide dekuquiet
+            show aizawaquiet at center_char
             thought "I don't answer."
             thought "Because the answer involves a world that shouldn't exist."
             thought "And a boy who was supposed to die in it."
             thought "And me. Standing in the middle of both."
             thought "That's a lot to explain before lunch."
 
+    hide aizawaquiet
+
     scene bg dorms_hallway at bg_fit
     with soft_dissolve
 
     pause 0.4
 
-    show tsuyu at left_char
+    show tsuyu at center_char
     with dissolve
 
     tsuyu "You knew Midoriya was going to trip on the stairs."
@@ -271,44 +357,73 @@ label arrival_scene:
 
     menu:
         "Instinct.":
+            hide tsuyu
+            show yntalking at center_char
             yn "...Instinct."
+            hide yntalking
+            show tsuyu at center_char
             tsuyu "You do that a lot. The instinct thing."
             tsuyu "It doesn't sound like instinct."
             tsuyu "It sounds like you already know what's going to happen."
+            hide tsuyu
+            show ynquiet at center_char
             thought "She's right. She's completely right."
             thought "Flat. Honest. Without cruelty."
             thought "Which somehow makes it worse."
             thought "I'd prefer cruelty. Cruelty I can dismiss."
 
         "I read people well.":
+            hide tsuyu
+            show yntalking at center_char
             yn "...I read people well."
+            hide yntalking
+            show tsuyu at center_char
             tsuyu "Ribbit. That's not what that looked like."
+            hide tsuyu
+            show ynquiet at center_char
             thought "She said ribbit."
-            thought "Out loud. On purpose."
             thought "And then immediately called me out."
-            thought "I respect that more than anything that has happened today."
+            thought "I respect that absurdity."
 
         "Would you believe me if I told you.":
+            hide tsuyu
+            show yntalking at center_char
             yn "...Would you believe me if I told you?"
+            hide yntalking
+            show tsuyu at center_char
             tsuyu "Probably. I believe most things. Ribbit."
+            hide tsuyu
+            show ynquiet at center_char
             thought "I almost tell her. Right there. In the hallway."
             thought "But I don't."
             thought "Because I've already changed too much."
+            hide ynquiet
+            show yntalking at center_char
             yn "...Maybe later."
+            hide yntalking
+            show tsuyu at center_char
             tsuyu "Okay. I'll be here."
+            hide tsuyu
+            show ynquiet at center_char
             thought "She means it. She always means it."
             thought "That's either comforting or terrifying."
             thought "Both."
 
         "I don't know how to explain it.":
+            hide tsuyu
+            show yntalking at center_char
             yn "...I don't know how to explain it."
+            hide yntalking
+            show tsuyu at center_char
             tsuyu "That's okay. You don't have to."
             tsuyu "I just wanted you to know I noticed."
+            hide tsuyu
+            show ynquiet at center_char
             thought "No pressure. Just — I noticed."
             thought "I don't know what to do with kindness that doesn't ask for anything."
             thought "It makes me want to sit down."
 
-    hide tsuyu
+    hide ynquiet
 
     scene bg training_ground at bg_fit
     with soft_dissolve
@@ -316,71 +431,122 @@ label arrival_scene:
     play sound "wind.wav" fadein 1.0
     pause 0.4
 
-    show bakugo at left_char
+    show bakugotalking at left_char
     with dissolve
 
     bakugo "Hey."
     pause 0.3
+    hide bakugotalking
+    show bakugoquiet at center_char
 
     yn "..."
     pause 0.3
+
+    hide bakugoquiet
+    show bakugotalking at center_char
 
     bakugo "You knew Deku was going to trip."
     bakugo "You knew Half-and-Half's left side runs hot."
     bakugo "You knew Dunce Face was going to short-circuit."
     bakugo "You knew all of it before it happened."
     pause 0.4
+    hide bakugotalking
+    show bakugoquiet at center_char
 
     menu:
         "Say nothing.":
             yn "..."
+            hide bakugoquiet
+            show bakugotalking at center_char
             bakugo "I don't know what your deal is."
             bakugo "But I'm watching you."
+            hide bakugotalking 
+            show bakugoquiet at center_char
             thought "I know. You always watch."
             thought "You watch and you wait and you explode."
             thought "...Don't say that."
             thought "He would not take that well."
 
         "Okay.":
+            hide bakugoquiet
+            show yntalking at center_char
             yn "...Okay."
+            hide yntalking
+            show bakugotalking at center_char
             bakugo "That's it? Just okay?"
+            hide bakugotalking
+            show yntalking at center_char
             yn "What do you want me to say?"
+            hide yntalking
+            show bakugotalking at center_char
             bakugo "Something that makes sense."
+            hide bakugotalking
+            show bakugoquiet at center_char
             thought "I don't have that. I haven't had that in a long time."
+            hide bakugoquiet
+            show yntalking at center_char
             yn "...I'll let you know when I find it."
+            hide yntalking
+            show bakugotalking at center_char
             bakugo "Tch."
+            hide bakugotalking
+            show bakugoquiet at center_char
             thought "He accepted that."
             thought "Somehow."
 
         "You're not wrong to be suspicious.":
+            hide bakugoquiet
+            show yntalking at center_char
             yn "...You're not wrong to be suspicious."
+            hide yntalking
+            show bakugotalking at center_char
             bakugo "I know I'm not. So what is it."
+            hide yntalking
+            show bakugotalking at center_char
             yn "...I can't tell you. Not yet."
+            hide bakugotalking
+            show yntalking at center_char
             bakugo "Not yet. So there's a yet."
+            hide bakugotalking
+            show bakugoquiet at center_char
             thought "He caught that. Of course he caught that."
             thought "He catches everything."
             thought "It's annoying."
 
         "I could ask you the same thing.":
+            hide bakugoquiet
+            show yntalking at center_char
             yn "...I could ask you the same thing."
+            hide yntalking
+            show bakugotalking at center_char
             bakugo "What."
+            hide bakugotalking
+            show yntalking at center_char
             yn "You watch everyone. You catalogue weaknesses."
             yn "You're always three steps ahead."
+            hide yntalking
+            show bakugotalking at center_char
             bakugo "That's called being prepared."
+            hide bakugotalking
+            show yntalking at center_char
             yn "So is what I do."
+            hide yntalking
+            show bakugotalking at center_char
             bakugo "Tch."
+            hide bakugotalking
+            show bakugoquiet at center_char
             thought "He walked away very aggressively."
             thought "The way you walk when you want someone to know you're thinking about them."
             thought "He would hate that I noticed that."
 
     hide bakugo
+    scene black
+    with soft_dissolve
 
     thought "He's not wrong to watch me. I would watch me too."
     pause 0.6
 
-    scene black
-    with soft_dissolve
-
+    
     pause 0.6
 
     jump dorms_scene
