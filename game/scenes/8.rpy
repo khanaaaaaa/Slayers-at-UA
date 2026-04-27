@@ -73,12 +73,10 @@ label epilogue_scene:
     pause 0.4
 
     hide ochacoquiet 
-    show yntalking at center_char
 
     yn "...We'll be right down."
     pause 0.3
 
-    hide yntalking
     show ochacotalking at center_char
 
     ochako "Okay!"
@@ -94,7 +92,6 @@ label epilogue_scene:
     pause 0.4
 
     hide ochacoquiet
-    show yntalking at center_char
 
     yn "...Thanks."
     pause 0.4
@@ -114,12 +111,10 @@ label epilogue_scene:
     pause 0.5
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...Yeah?"
     pause 0.4
 
-    hide yntalking
     show muichiroquiet at center_char
     mui "..."
     hide muichiroquiet
@@ -134,12 +129,10 @@ label epilogue_scene:
     pause 0.5
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...I'll try."
     pause 0.6
 
-    hide yntalking
     show muichirotalking at center_char
     mui "That's enough."
     hide muichirotalking

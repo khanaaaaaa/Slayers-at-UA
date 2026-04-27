@@ -18,11 +18,9 @@ label anchor_scene:
     show muichirotalking at center_char
     mui "...You look different."
     hide muichirotalking
-    show yntalking at center_char
 
     yn "...Different how?"
 
-    hide yntalking
     show muichirotalking at center_char
     mui "More solid."
     mui "Before you looked like you were... disappearing."
@@ -33,7 +31,6 @@ label anchor_scene:
     pause 0.5
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...I remembered something."
 
@@ -41,12 +38,10 @@ label anchor_scene:
     show muichirotalking at center_char
     mui "...What?"
     hide muichirotalking
-    show yntalking at center_char
 
     yn "Where I'm from. What I did. How I got here."
     pause 0.4
 
-    hide yntalking
     show muichiroquiet at center_char
     mui "..."
     hide muichiroquiet
@@ -61,24 +56,19 @@ label anchor_scene:
     pause 0.5
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...I'm from here. This world."
     yn "But not this version of it."
     pause 0.3
 
-    hide yntalking
     show muichiroquiet at center_char
     mui "..."
     hide muichiroquiet
     show muichirotalking at center_char
     mui "...What does that mean?"
     hide muichirotalking
-    show ynquiet at center_char
 
     yn "..."
-    hide ynquiet
-    show yntalking at center_char
 
     yn "Where I came from... you were a story."
     yn "The world you came from. The demons. The Hashira."
@@ -86,17 +76,14 @@ label anchor_scene:
     yn "Because someone wrote it. And I read it."
     pause 0.5
 
-    hide yntalking
     show muichirotalking at center_char
     mui "..."
     mui "So you knew. Everything."
     hide muichirotalking
-    show yntalking at center_char
 
     yn "...Yes."
     pause 0.4
 
-    hide yntalking
     show muichirotalking at center_char
     mui "...You knew what would happen to me."
     hide muichirotalking
@@ -106,12 +93,10 @@ label anchor_scene:
     pause 0.5
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...Yes."
     pause 0.4
 
-    hide yntalking
     show muichiroquiet at center_char
     mui "..."
     hide muichiroquiet
@@ -124,12 +109,10 @@ label anchor_scene:
     pause 0.4
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...Yes."
     pause 0.4
 
-    hide yntalking
     show muichiroquiet at center_char
     mui "..."
     hide muichiroquiet
@@ -143,10 +126,8 @@ label anchor_scene:
     menu:
         "Because I knew you. And I didn't want to watch it happen.":
             hide muichiroquiet
-            show yntalking at center_char
             yn "Because I knew you."
             yn "And I didn't want to watch it happen."
-            hide yn
             show muichiroquiet at center_char
             mui "..."
             hide muichiroquiet
@@ -158,9 +139,7 @@ label anchor_scene:
 
         "Because I couldn't not.":
             hide muichiroquiet
-            show yntalking at center_char
             yn "Because I couldn't not."
-            hide yntalking
             show muichiroquiet at center_char
             mui "..."
             thought "He doesn't say anything."
@@ -168,9 +147,7 @@ label anchor_scene:
 
         "I don't know. I just did.":
             hide muichiroquiet
-            show yntalking at center_char
             yn "...I don't know. I just did."
-            hide yntalking
             show muichiroquiet at center_char
             mui "..."
             hide muichiroquiet
@@ -183,13 +160,11 @@ label anchor_scene:
     pause 0.5
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...There's something else."
     yn "Something I'm not saying."
     pause 0.4
 
-    hide yntalking
     show muichirotalking at center_char
     mui "I know."
     hide muichirotalking
@@ -199,7 +174,6 @@ label anchor_scene:
     pause 0.4
 
     hide muichiroquiet
-    show yntalking at center_char
     yn "I did something. Before I came here."
     yn "In my world."
     yn "Something I can't take back."
@@ -211,7 +185,6 @@ label anchor_scene:
     yn "My parents."
     pause 0.6
 
-    hide yntalking
     show muichiroquiet at center_char
     mui "..."
 

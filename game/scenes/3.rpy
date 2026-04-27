@@ -118,7 +118,6 @@ label mha_intro:
     aizawa "..You two are finally awake."
     pause 0.4
 
-    show ynquiet
 
     menu:
         "How long were we out.":
@@ -143,10 +142,9 @@ label mha_intro:
         "Say nothing.":
             thought "I look at him. Dark clothes. Tired eyes."
             thought "The kind of tired that doesn't go away with sleep."
-            thought "I know who he is. I know his name. I know his quirk."
-            thought "I know his students."
-            thought "...Don't say any of that."
-            thought "That would be a weird thing to say."
+            thought "Something about him feels familiar in a way I can't explain."
+            thought "...Don't stare."
+            thought "That would be a weird thing to do."
 
     yn "..Who—"
     pause 0.3
@@ -224,9 +222,9 @@ label mha_intro:
 
     yn "Hero..?"
 
-    thought "That word. I know that word."
-    thought "But not from the Corps. From somewhere else."
-    thought "Somewhere with tall buildings. And people who fly."
+    thought "That word."
+    thought "I know it. I don't know how I know it."
+    thought "But it fits here like it was always supposed to."
     thought "...Why do I know that."
     pause 0.6
 
@@ -347,8 +345,7 @@ label mha_intro:
             aizawa "Somewhere else then."
             yn "...Somewhere that doesn't exist anymore."
             thought "Or maybe it does. I don't know."
-            thought "I don't know if the KNY world still exists."
-            thought "Or if I left it behind completely."
+            thought "I don't know if I can go back."
             thought "I try not to think about that."
 
         "We had somewhere.":
@@ -377,10 +374,9 @@ label mha_intro:
 
     menu:
         "He's right.":
-            thought "He's right. I know he's right."
-            thought "I know exactly how dangerous this world is."
-            thought "I know the villains. I know the threats."
-            thought "I know things that haven't happened yet."
+            thought "He's right."
+            thought "Something in me already knows how dangerous this place is."
+            thought "I don't know where that knowledge comes from."
             thought "And that terrifies me more than any of it."
 
         "Look at Muichiro.":
@@ -449,11 +445,10 @@ label mha_intro:
 
         "I've been here before.":
             thought "I almost say it."
-            thought "I know this gate. I know what's behind it."
-            thought "I know the hallways. The classrooms. The names on the doors."
-            thought "I know which vending machine is broken on the second floor."
+            thought "Something about this gate feels known."
+            thought "Like I've seen it from a distance. Through glass, maybe."
             thought "I don't say any of that."
-            thought "That would be a lot to explain."
+            thought "I don't know how to explain it even to myself."
 
     scene black
     with Fade(0.8, 0.3, 0.8)
@@ -483,14 +478,15 @@ label mha_intro:
             nezu "Very little. Which is precisely what makes it fascinating."
             nezu "Gaps in my knowledge are rare. And therefore interesting."
             thought "He knows almost everything. Almost."
-            thought "I know what fills the gap."
-            thought "I'm not going to tell him that."
+            thought "Something tells me I know what fills the gap."
+            thought "I don't know where that feeling comes from."
+            thought "I'm not going to say any of that."
 
         "Say nothing.":
             thought "I let him talk. He will anyway."
             thought "Talks. Observes. Files things away."
-            thought "I know that about him."
-            thought "I know too much about all of them."
+            thought "I know that somehow. The same way I know too many things."
+            thought "Without knowing why I know them."
             thought "It's exhausting."
 
     show muiquiet at left_char
@@ -584,9 +580,9 @@ label mha_intro:
 
     thought "I know this place. Not from being here."
     thought "From somewhere else. Like I've seen it before."
-    thought "On a screen."
+    thought "Like a memory that doesn't belong to me."
     thought "..."
-    thought "What's a screen."
+    thought "I don't know what to do with that."
     pause 0.8
 
     scene black

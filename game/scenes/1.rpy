@@ -19,13 +19,11 @@ label prologue_start:
 
     play music "memory_theme.mp3" fadein 2.5
 
-    show youngynquiet at center_char
     with dissolve
 
     thought "He'll come from the left. He always does."
     pause 0.4
 
-    hide youngynquiet
     show muiquiet at center_char
     with dissolve
 
@@ -47,12 +45,8 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide youngynquiet
-    show youngyntalking at center_char
-    "Usually."
-    "Do you want to know mine?"
-    hide youngyntalking
-    show youngynquiet at center_char
+    yn "Usually."
+    yn "Do you want to know mine?"
 
     hide muiquiet
     show muitalking at center_char
@@ -62,11 +56,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide youngynquiet
-    show youngyntalking at center_char
-    "...Then what would you call me?"
-    hide youngyntalking
-    show youngynquiet at center_char
+    yn "...Then what would you call me?"
 
     hide muiquiet
     show muitalking at center_char
@@ -74,11 +64,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide youngynquiet
-    show youngyntalking at center_char
-    "That sounds like a lot of pressure."
-    hide youngyntalking
-    show youngynquiet at center_char
+    yn "That sounds like a lot of pressure."
 
     hide muiquiet
     show muitalking at center_char
@@ -92,11 +78,7 @@ label prologue_start:
     thought "How many times have we done this?"
     pause 0.8
 
-    hide youngynquiet
-    show youngyntalking at center_char
-    "Then maybe you should hurry."
-    hide youngyntalking
-    show youngynquiet at center_char
+    yn "Then maybe you should hurry."
 
     mui "..."
     pause 0.5
@@ -129,11 +111,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide youngynquiett
-    show youngyntalkingg at center_char
     yn "Why do you always pretend not to look?"
-    hide youngyntalkingg
-    show youngynquiett at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -141,11 +119,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide youngynquiett
-    show youngyntalkingg at center_char
     yn "No. But neither are you."
-    hide youngyntalkingg
-    show youngynquiett at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -161,7 +135,7 @@ label prologue_start:
 
     thought "—bright lights—"
     thought "—a building, glass and steel—"
-    thought "—someone calling her name—"
+    thought "—someone calling my name—"
     thought "—not [player_name]—"
     thought "—something else—"
     pause 0.3
@@ -170,17 +144,13 @@ label prologue_start:
     with soft_dissolve
 
     show muiquiet at center_char
-    show youngynquiet at center_char
 
-    thought "What was that. Instinct. Probably."
+    thought "What was that."
+    thought "I don't know. I never know."
     pause 0.6
 
-    hide youngynquiett
-    show youngyntalking at center_char
     yn "It means... you shouldn't be this calm."
     yn "Not with demons this close."
-    hide youngyntalking
-    show youngynquiet at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -188,11 +158,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide youngynquiett
-    show youngyntalkingg at center_char
     yn "Second?"
-    hide youngyntalkingg
-    show youngynquiett at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -200,15 +166,13 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    thought "Yuichiro. Protective. Harsh. Loves Muichiro more than he can say."
-    thought "...How do I know that."
+    thought "His brother."
+    thought "I know that without knowing how."
+    thought "Protective. Harsh. Loves him more than he can say."
+    thought "...Why do I know that."
     pause 0.6
 
-    hide youngynquiett
-    show youngyntalkingg at center_char
     yn "Then you should listen to him."
-    hide youngyntalkingg
-    show youngynquiett at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -216,11 +180,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide youngynquiett
-    show youngyntalkingg at center_char
     yn "You're strange."
-    hide youngyntalkingg
-    show youngynquiett at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -237,17 +197,9 @@ label prologue_start:
             mui "...Okay."
             hide muitalking
             show muiquiet at center_char
-            hide youngynquiett
-            show youngyntalkingg at center_char
             yn "That was easier than I expected."
-            hide youngyntalkingg
-            show youngynquiett at center_char
-            if route == "meta":
-                thought "It always is. I've read this part."
-                thought "He says okay. Then he forgets."
-                thought "Every time."
-            else:
-                thought "It always is. ...Always?"
+            thought "It always is."
+            thought "...Always?"
 
         "...I don't know yet. But I'm still here.":
             hide muiquiet
@@ -269,23 +221,15 @@ label prologue_start:
             mui "...Right. ...I figured."
             hide muitalking
             show muiquiet at center_char
-            if route == "silent":
-                thought "He says it like he expected it."
-                thought "Like he's been told no before. By me."
-                thought "He probably has."
-            else:
-                thought "He says that like he expected it."
-                thought "Like he's been told no before. By me."
+            thought "He says it like he expected it."
+            thought "Like he's been told no before. By me."
+            thought "He probably has."
 
     pause 0.5
 
-    hide youngynquiet
-    show youngyntalking at center_char
     yn "Then listen carefully."
     yn "If something feels wrong..."
     yn "...run."
-    hide youngyntalkingg
-    show youngynquiett at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -293,14 +237,9 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide youngynquiett
-    show youngyntalkingg at center_char
-
     menu:
         "Yes. Promise me.":
             yn "Yes. Promise me."
-            hide youngyntalkingg
-            show youngynquiett at center_char
             hide muiquiet
             show muitalking at center_char
             mui "...Okay."
@@ -311,8 +250,6 @@ label prologue_start:
 
         "Yes. Even if you think you don't.":
             yn "Yes. Even if you think you don't."
-            hide youngyntalkingg
-            show youngynquiett at center_char
             hide muiquiet
             show muitalking at center_char
             mui "...That's a strange way to say it."
@@ -323,8 +260,6 @@ label prologue_start:
 
         "Just... please.":
             yn "Just... please."
-            hide youngyntalkingg
-            show youngynquiett at center_char
             hide muiquiet
             show muitalking at center_char
             mui "...Okay."
@@ -520,9 +455,9 @@ label prologue_start:
 
     thought "—a kitchen—"
     thought "—something burning—"
-    thought "—her mother's voice, sharp—"
-    thought "—her own hands—"
-    thought "—something wrong with her hands—"
+    thought "—my mother's voice, sharp—"
+    thought "—my own hands—"
+    thought "—something wrong with my hands—"
     pause 0.3
 
     scene black
@@ -609,6 +544,7 @@ label prologue_start:
             show muiquiet at center_char
             thought "It used to be."
             thought "Before I knew how it ended."
+            thought "...How do I know how it ends."
 
         "...If something feels wrong — run.":
             yn "...If something feels wrong..."

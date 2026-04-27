@@ -18,7 +18,6 @@ label mission_scene:
     thought "Back when he still laughed."
     pause 0.8
 
-    show youngynquiet at right_char
     with dissolve
 
     yn "Moon Breathing..."
@@ -59,11 +58,7 @@ label mission_scene:
             demon2 "The ones who go quiet are always the ones with the most to hide."
 
         "...You don't know what you're talking about.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "You don't know anything about me."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             demon2 "Oh. It speaks. And it's angry."
             demon2 "Good. Anger is honest."
 
@@ -73,11 +68,7 @@ label mission_scene:
             demon2 "Ah. You looked at him. Instinct. Even now."
 
         "...It's not regret. It's something worse.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "It's not regret."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             demon2 "Oh? Then what is it."
             thought "I don't answer. Because I don't have a word for it."
             thought "Grief, maybe. But grief for something that hasn't finished happening yet."
@@ -125,11 +116,7 @@ label mission_scene:
 
     menu:
         "...[player_name]. Same as it's always been.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "...[player_name]. Same as it's always been."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "Right. You used to dislike it when I forgot."
@@ -139,29 +126,17 @@ label mission_scene:
 
         "...Does it matter to you?":
             thought "He asked. Like it's a small thing. Like it doesn't cost anything."
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "...Does it matter to you?"
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "Probably not. But I asked."
             hide muitalking
             show muiquiet at left_char
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "...[player_name]."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             thought "He asked. That's something. Even if he won't remember."
 
         "...[player_name]. You used to say it differently.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "...[player_name]. You used to say it differently."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "...How."
@@ -170,11 +145,7 @@ label mission_scene:
             thought "Softer. Like it was something you were careful with."
             thought "Like it was made of something that could break."
 
-    hide youngynquiet
-    show youngyntalkingg at right_char
     yn "Well... you never forgot before."
-    hide youngyntalkingg
-    show youngynquiet at right_char
 
     hide muiquiet
     show muitalking at left_char
@@ -185,12 +156,8 @@ label mission_scene:
     thought "No answer. As always."
     pause 0.4
 
-    hide youngynquiet
-    show youngyntalkingg at right_char
     yn "You used to call me something."
     yn "...Sparrow."
-    hide youngyntalkingg
-    show youngynquiet at right_char
 
     hide muiquiet
     show muitalking at left_char
@@ -202,11 +169,7 @@ label mission_scene:
 
     menu:
         "Because I moved like one. Small. Hard to catch.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "Because I moved like one. Small. Hard to catch."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "That doesn't sound like something I'd say."
@@ -216,12 +179,8 @@ label mission_scene:
             thought "When he still noticed things like that."
 
         "Because you said sparrows always come back. Even when they shouldn't.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "Because you said sparrows always come back."
             yn "Even when they shouldn't."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "...I said that?"
@@ -231,11 +190,7 @@ label mission_scene:
             thought "Like it almost fits."
 
         "I don't know. You just started one day and never stopped.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "I don't know. You just started one day and never stopped."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "That sounds inefficient."
@@ -246,11 +201,7 @@ label mission_scene:
             thought "Like love was something you could optimize."
 
         "It doesn't matter. You won't remember it anyway.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "...It doesn't matter. You won't remember it anyway."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "...That was cruel."
@@ -286,11 +237,7 @@ label mission_scene:
             thought "Because if I look at his face I'll say something I can't take back."
 
         "...You're not saying anything I don't already know.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "You're not saying anything I don't already know."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             demon2 "Oh. That's worse."
             demon2 "You already know. And you're still here."
 
@@ -324,11 +271,7 @@ label mission_scene:
 
     with hpunch
 
-    hide youngynquiet
-    show youngyntalkingg at right_char
     yn "Muichiro—!"
-    hide youngyntalkingg
-    show youngynquiet at right_char
 
     hide muiquiet
     show muitalking at left_char
@@ -341,11 +284,7 @@ label mission_scene:
 
     menu:
         "...Like I know you. Because I do.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "...Like I know you. Because I do."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "...You don't. Not anymore."
@@ -363,11 +302,7 @@ label mission_scene:
             thought "It's the only thing I have left that he hasn't forgotten."
 
         "...Muichiro.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "...Muichiro."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "..."
@@ -380,11 +315,7 @@ label mission_scene:
             thought "The way things go still right before they remember."
 
         "...I'm sorry. I know you don't want me to.":
-            hide youngynquiet
-            show youngyntalkingg at right_char
             yn "...I'm sorry. I know you don't want me to."
-            hide youngyntalkingg
-            show youngynquiet at right_char
             hide muiquiet
             show muitalking at left_char
             mui "...Then why."

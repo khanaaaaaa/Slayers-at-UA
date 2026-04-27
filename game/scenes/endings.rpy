@@ -133,7 +133,6 @@ label ending_truth:
     pause 0.4
 
     hide aizawatalking
-    show yntalking at center_char
 
     yn "I said — I know this world."
     yn "I know all of you."
@@ -141,7 +140,6 @@ label ending_truth:
     yn "A story. That I read."
     pause 0.5
 
-    hide yntalking
     show aizawaquiet at center_char
 
     aizawa "..."
@@ -167,13 +165,9 @@ label ending_truth:
     pause 0.4
 
     hide aizawatalking
-    show ynquiet at center_char
     yn "..."
-    hide ynquiet
-    show yntalking at center_char
     yn "...Yes."
     pause 0.6
-    hide yntalking
     show aizawaquiet at center_char
     aizawa "..."
     hide aizawaquiet
@@ -189,12 +183,10 @@ label ending_truth:
     pause 0.5
 
     hide aizawaquiet
-    show yntalking at center_char
 
     yn "...I know."
     pause 0.4
 
-    hide yntalking
     show aizawatalking at center_char
 
     aizawa "I'm sorry."

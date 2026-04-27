@@ -19,12 +19,10 @@ label dorms_scene:
     show muichirotalking at center_char
     mui "...This place is strange."
     hide muichirotalking
-    show yntalking at center_char
 
     yn "Yeah."
     pause 0.3
 
-    hide yntalking
     show muichirotalking at center_char
     mui "...Do you know where we are?"
     hide muichirotalking
@@ -36,12 +34,10 @@ label dorms_scene:
     pause 0.5
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...I don't think so."
     pause 0.4
 
-    hide yntalking
     show muichirotalking at center_char
     mui "You hesitated."
     hide muichirotalking
@@ -128,7 +124,6 @@ label dorms_scene:
     play sound "city_ambience.wav" fadein 1.0
     pause 0.5
 
-    show ynquiet at center_char
 
     thought "Training starts today."
     thought "Someone's going to challenge him. The loud one with the red hair."
@@ -136,7 +131,6 @@ label dorms_scene:
     thought "...Why do I know that."
     pause 0.6
 
-    hide ynquiet
     show kirishimatalking at center_char
     with dissolve
 
@@ -209,12 +203,10 @@ label dorms_scene:
     pause 0.3
 
     hide aizawatalking
-    show yntalking at center_char
 
     yn "...Instinct."
     pause 0.3
 
-    hide yntalking
     show aizawatalking at center_char
 
     aizawa "You also knew Todoroki's left side runs hot."
@@ -222,12 +214,10 @@ label dorms_scene:
     pause 0.3
 
     hide aizawatalking
-    show yntalking at center_char
 
     yn "...I read people well."
     pause 0.3
 
-    hide yntalking
     show aizawaquiet at center_char
 
     aizawa "..."
@@ -246,12 +236,10 @@ label dorms_scene:
     pause 0.6
 
     hide aizawaquiet
-    show yntalking at center_char
 
     yn "...I don't know where I'm from."
     pause 0.4
 
-    hide yntalking
     show aizawaquiet at center_char
 
     aizawa "..."
@@ -380,12 +368,10 @@ label rooftop_scene:
     show muichiroquiet at center_char
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...What?"
     pause 0.3
 
-    hide yntalking
     show muitalking at center_char
     mui "Your hand. It's... translucent."
     hide muitalking
@@ -396,12 +382,10 @@ label rooftop_scene:
     pause 0.6
 
     hide muichiroquiet
-    show yntalking at center_char
 
     yn "...I'm fine."
     pause 0.3
 
-    hide yntalking
     show muichirotalking at center_char
     mui "You're not."
     mui "...What's happening to you?"
