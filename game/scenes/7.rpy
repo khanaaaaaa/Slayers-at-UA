@@ -221,7 +221,7 @@ label anchor_scene:
     pause 0.6
 
     hide muichiroquiet
-    screen black
+    scene black
     with dissolve
 
     yn "...I ran. I found a river."

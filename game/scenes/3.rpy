@@ -122,7 +122,7 @@ label mha_intro:
 
     menu:
         "How long were we out.":
-            hideaizawa
+            hide aizawatalking
 
             yn "..How long were we out?"
 

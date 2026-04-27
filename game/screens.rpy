@@ -118,33 +118,38 @@ style window:
     xalign 0.5
     xfill True
     yalign 1.0
-    ysize 290
-    background Solid("#0a0a0f99")
-    bottom_padding 28
-    top_padding 28
-    left_padding 48
-    right_padding 48
+    ysize 300
+    background Solid("#08080ecc")
+    bottom_padding 36
+    top_padding 36
+    left_padding 120
+    right_padding 120
 
 style namebox:
-    xpos 48
-    xanchor 0.0
+    xalign 0.5
+    xanchor 0.5
+    xpos 0.5
     ypos -2
     ysize None
     background Solid("#00000000")
-    padding (0, 0, 0, 0)
+    padding (24, 4, 24, 4)
 
 style say_label:
-    xalign 0.0
+    xalign 0.5
     yalign 1.0
-    size 36
+    size 34
     color "#e8e8f0"
     outlines [(2, "#00000099", 0, 0)]
 
 style say_dialogue:
-    xpos 48
-    xsize 1824
-    ypos 52
+    xalign 0.5
+    xanchor 0.5
+    xpos 0.5
+    xsize 1680
+    ypos 48
     adjust_spacing False
+    textalign 0.5
+    layout "subtitle"
     color "#dde8f0"
     size 33
     line_spacing 10
@@ -162,24 +167,25 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 420
-    yanchor 0.5
-    spacing 18
+    yalign 0.5
+    ypos 0.5
+    spacing 16
 
 style choice_button is default:
-    xminimum 600
-    xmaximum 1400
-    background Solid("#0d0d1a99")
-    hover_background Solid("#1a1a3399")
-    padding (36, 14, 36, 14)
+    xminimum 800
+    xmaximum 1200
+    xalign 0.5
+    background Solid("#0d0d1ecc")
+    hover_background Solid("#1c1c3acc")
+    padding (48, 16, 48, 16)
 
 style choice_button_text is default:
     xalign 0.5
     textalign 0.5
-    color "#9999cc"
-    hover_color "#e0e0ff"
-    size 31
-    outlines [(1, "#00000077", 0, 0)]
+    color "#aaaadd"
+    hover_color "#e8e8ff"
+    size 30
+    outlines [(1, "#00000088", 0, 0)]
 
 ## Input screen ################################################################
 ##
@@ -256,13 +262,22 @@ style quick_button_text is button_text
 
 style quick_menu:
     xalign 0.5
+    xanchor 0.5
     yalign 1.0
+    yoffset -8
+    spacing 0
+    background Solid("#08080eaa")
 
 style quick_button:
     properties gui.button_properties("quick_button")
+    padding (20, 8, 20, 8)
 
 style quick_button_text:
     properties gui.text_properties("quick_button")
+    xalign 0.5
+    size 22
+    color "#8888aa"
+    hover_color "#ccccee"
 
 
 ################################################################################
@@ -325,10 +340,21 @@ style navigation_button_text is gui_button_text
 
 style navigation_button:
     size_group "navigation"
-    properties gui.button_properties("navigation_button")
+    xminimum 320
+    xalign 0.5
+    padding (40, 14, 40, 14)
+    background Solid("#00000000")
+    hover_background Solid("#7ecac322")
 
 style navigation_button_text:
-    properties gui.text_properties("navigation_button")
+    xalign 0.5
+    textalign 0.5
+    font "fonts/Quicksand-Bold.ttf"
+    size 34
+    color "#aacccc"
+    hover_color "#e8f8f8"
+    outlines [(1, "#00000066", 0, 0)]
+    kerning 3
 
 
 ## Main Menu screen ############################################################
@@ -339,29 +365,57 @@ style navigation_button_text:
 
 screen main_menu():
 
-    ## This ensures that any other menu screen is replaced.
     tag menu
 
     add gui.main_menu_background
 
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    add Solid("#00000088")
 
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
+    vbox:
+        xalign 0.5
+        yalign 0.42
+        spacing 0
 
-    if gui.show_name:
+        text "SLAYERS AT UA":
+            xalign 0.5
+            size 110
+            font "fonts/Quicksand-Bold.ttf"
+            color "#e8f4ff"
+            outlines [(3, "#00000099", 0, 0)]
+            kerning 8
 
-        vbox:
-            style "main_menu_vbox"
+        null height 12
 
-            text "[config.name!t]":
-                style "main_menu_title"
+        text "a visual novel":
+            xalign 0.5
+            size 32
+            font "fonts/Quicksand-Regular.ttf"
+            color "#7ecac3"
+            outlines [(1, "#00000088", 0, 0)]
+            kerning 4
 
-            text "[config.version]":
-                style "main_menu_version"
+    vbox:
+        style_prefix "navigation"
+        xalign 0.5
+        yalign 0.72
+        spacing 14
+
+        if main_menu:
+            textbutton _("START") action Start()
+
+        textbutton _("LOAD") action ShowMenu("load")
+        textbutton _("PREFERENCES") action ShowMenu("preferences")
+        textbutton _("ABOUT") action ShowMenu("about")
+
+        if renpy.variant("pc"):
+            textbutton _("QUIT") action Quit(confirm=not main_menu)
+
+    text "[config.version]":
+        xalign 0.98
+        yalign 0.99
+        size 22
+        font "fonts/Quicksand-Regular.ttf"
+        color "#44445566"
 
 
 style main_menu_frame is empty

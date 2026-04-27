@@ -48,7 +48,33 @@ define build.name = "SlayersAtUA"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
+
+init python:
+    import os
+    _audio_dir = os.path.join(renpy.config.gamedir, "audio")
+    if not os.path.exists(_audio_dir):
+        os.makedirs(_audio_dir)
+    _silent = os.path.join(_audio_dir, "silent.ogg")
+    if not os.path.exists(_silent):
+        with open(_silent, "wb") as _f:
+            _f.write(b"OggS\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")
+
+define audio.wind_soft       = "audio/silent.ogg"
+define audio.wind_hollow     = "audio/silent.ogg"
+define audio.wind_low        = "audio/silent.ogg"
+define audio.wind            = "audio/silent.ogg"
+define audio.memory_theme    = "audio/silent.ogg"
+define audio.night_calm      = "audio/silent.ogg"
+define audio.heartbeat       = "audio/silent.ogg"
+define audio.fire_crackle    = "audio/silent.ogg"
+define audio.river_flow      = "audio/silent.ogg"
+define audio.distant_scream  = "audio/silent.ogg"
+define audio.low_growl       = "audio/silent.ogg"
+define audio.leaves_rustle   = "audio/silent.ogg"
+define audio.mist            = "audio/silent.ogg"
+define audio.city_ambience   = "audio/silent.ogg"
+define audio.distant_city    = "audio/silent.ogg"
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
