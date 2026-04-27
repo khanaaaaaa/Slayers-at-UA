@@ -14,67 +14,42 @@ label memory_scene:
     scene black
     with flash_white
 
-    thought "There was a city. big. loud."
+    thought "There was a city. Big. Loud."
     thought "The kind that hums at 3am and never actually goes dark."
-    thought "I lived there. I had a room. I had a window."
-    thought "I had a name that wasn't [player_name]."
+    thought "I didn't have a room there. Not really."
+    thought "I had a bed. In a building with a lot of other beds."
     thought "..."
-    thought "I can't remember it. I've been trying for a while now."
+    thought "An orphanage. That's the word."
+    thought "I always hated that word."
     pause 0.6
 
     scene black
     with hard_cut
 
     thought "I had a quirk."
-    thought "Everyone does. Where i'm from."
-    thought "Mine was the kind people don't talk about at dinner."
-    thought "The kind that gets you a separate room at the training facility."
-    thought "..."
-    thought "Training facility. That's a word i know from before."
-    thought "From the other world. The one that was real."
-    thought "..."
-    thought "They're both real. That's the problem."
+    thought "Everyone does. Where I'm from."
+    thought "Mine wasn't dangerous. It wasn't impressive either."
+    thought "It was just... mine."
+    thought "The only thing that was."
     pause 0.6
 
     scene black
     with flash_white
 
-    play sound "fire_crackle.wav" fadein 0.5
-
-    thought "There was an argument."
-    thought "I don't remember what it was about. I never do."
-    thought "I remember the kitchen. The overhead light. The way it buzzed."
-    thought "My mother's hands on the counter."
-    thought "And then—"
-    thought "..."
-    thought "And then my hands. Shaking. And then not shaking."
-    thought "And then—"
-    pause 0.4
-
-    stop sound
-    with flash_white
-
-    thought "..."
-    thought "I don't want to say it."
-    thought "I've never said it. not out loud."
+    thought "I left when I was old enough to leave."
+    thought "No one stopped me."
+    thought "That's the thing about growing up in a place like that."
+    thought "You learn early that no one is going to come looking."
+    thought "So you stop expecting it."
     pause 0.6
 
-    menu:
-        "...say it.":
-            thought "I lost control of my quirk. In the kitchen, with my parents."
-            thought "..."
-            thought "I ran before I could find out what happened."
-            thought "That's the part I'm least proud of."
-            thought "The running."
+    scene black
+    with hard_cut
 
-        "...Not yet.":
-            thought "Not yet. I'll get there."
-            thought "Just. Not yet."
-
-        "...I already know. I've always known.":
-            thought "I already know, I've always known."
-            thought "There's no surprise left, just the same fact sitting there every time."
-
+    thought "I don't know what I was looking for."
+    thought "I don't think I was looking for anything."
+    thought "I was just... moving."
+    thought "The way you move when staying still feels worse."
     pause 0.6
 
     scene bg river_night at bg_fit
@@ -83,22 +58,20 @@ label memory_scene:
     play sound "river_flow.wav" fadein 2.0
     pause 0.6
 
-    thought "I ran for a long time."
-    thought "Until there was water. a river."
-    thought "Cold."
-    pause 0.4
+    thought "I found the river by accident."
+    thought "Or maybe not. I don't know."
+    thought "It was late. The sky was that color it gets right before it gives up on being dark."
+    pause 0.5
 
-    thought "I stood at the edge."
-    thought "I don't know how long."
-    thought "Long enough that the sky changed color."
-    pause 0.4
+    thought "I sat at the edge for a while."
+    thought "Not thinking about anything in particular."
+    thought "Just... sitting."
+    pause 0.5
 
-    thought "Did i jump, or did i fall?"
-    thought "..."
-    thought "I've been asking myself that for a while."
-    thought "I don't think the answer matters."
-    thought "What matters is that I went in, and I didn't come back out."
-    thought "Atleast, not the same way."
+    thought "And then I was in it."
+    thought "I don't remember deciding."
+    thought "I don't remember falling."
+    thought "I just remember the cold."
     pause 0.6
 
     thought "The water was black."
@@ -110,7 +83,7 @@ label memory_scene:
         "...Come back up.":
             thought "I come back up. I always come back up."
             thought "That's the thing about me."
-            thought "I keep surfacing, even when I don't want to."
+            thought "I keep surfacing, even when I don't mean to."
             jump memory_surface
 
         "...Stay.":
@@ -134,15 +107,15 @@ label memory_surface:
     thought "His brother, the demons, all of it."
     pause 0.5
 
-    thought "Because it wasn't real... Where i came from."
-    thought "It was a story... something people read..."
+    thought "Because it wasn't real. Where I came from."
+    thought "It was a story. Something people read."
     thought "..."
     thought "I read every chapter."
     thought "Every death, every name."
     pause 0.6
 
-    thought "And then i fell into the river."
-    thought "And i woke up inside it."
+    thought "And then I fell into the river."
+    thought "And I woke up inside it."
     pause 0.6
 
     thought "..."
@@ -150,19 +123,19 @@ label memory_surface:
     thought "In the story... he was supposed to die."
     pause 0.6
 
-    thought "He didn't... because I was there."
-    thought "Because I knew... and I couldn't let it happen."
+    thought "He didn't. Because I was there."
+    thought "Because I knew. And I couldn't let it happen."
     pause 0.5
 
     thought "I don't know if that was right."
-    thought "I don't know if i had the right."
-    thought "To change someone's story just because i knew how it ended..."
+    thought "I don't know if I had the right."
+    thought "To change someone's story just because I knew how it ended."
     pause 0.6
 
-    thought "But i did it anyway."
+    thought "But I did it anyway."
     thought "And now we're both here."
-    thought "In a world that was also fiction... once."
-    thought "And i don't know what i've changed here... just by existing."
+    thought "In a world that was also fiction. Once."
+    thought "And I don't know what I've changed here just by existing."
     pause 0.6
 
     thought "..."

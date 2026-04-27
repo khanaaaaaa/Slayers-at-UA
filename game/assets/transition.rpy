@@ -13,6 +13,11 @@ transform center_char:
     xalign 0.5
     yalign 1.0
     yoffset 320
+transform center_charr:
+    zoom 2.0
+    xalign 0.5
+    yalign 0.5
+    yoffset 220
 transform left_char_ghost:
     zoom 1.8
     xalign 0.18

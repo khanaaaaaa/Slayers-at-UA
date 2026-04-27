@@ -6,18 +6,17 @@ label epilogue_scene:
     play music "memory_theme.mp3" fadein 3.0
     pause 0.8
 
-    thought "I don't know how this ends."
-    thought "I used to. I knew every ending for every story."
+    thought "I used to know how every story ended."
+    thought "I don't know how this one goes."
     thought "..."
-    thought "But I changed things. And now I don't know."
-    thought "And I think — I think that might be okay."
+    thought "That should scare me more than it does."
     pause 0.6
 
     show muichiroquiet at center_char
     with dissolve
 
-    thought "He's still here. He keeps being here."
-    thought "Even when he forgets. He comes back."
+    thought "He followed me down."
+    thought "Didn't say anything. Just walked beside me like it was obvious."
     pause 0.5
 
     hide muichiroquiet
@@ -30,12 +29,12 @@ label epilogue_scene:
     pause 0.3
 
     hide muichiroquiet
-    show muitalking at center_char
-    mui "Do you know how this one goes."
+    show muichirotalking at center_char
+    mui "Do you know how this one goes?"
     hide muichirotalking
     show muichiroquiet at center_char
 
-    thought "No. For the first time. No."
+    thought "No, for the first time... No."
     pause 0.5
 
     yn "...No. Not this one."
@@ -72,11 +71,10 @@ label epilogue_scene:
     thought "Even when you're not ready."
     pause 0.4
 
-    hide ochacoquiet 
-
     yn "...We'll be right down."
     pause 0.3
 
+    hide ochacoquiet
     show ochacotalking at center_char
 
     ochako "Okay!"
@@ -91,16 +89,11 @@ label epilogue_scene:
     thought "She noticed. Of course she noticed."
     pause 0.4
 
-    hide ochacoquiet
-
     yn "...Thanks."
-    pause 0.4
-
-    hide ochako
 
     pause 0.5
 
-    hide muichiroquiet
+    hide ochacoquiet
     show muichirotalking at center_char
     mui "...Sparrow."
     hide muichirotalking
@@ -109,8 +102,6 @@ label epilogue_scene:
     thought "..."
     thought "He said it. On his own. Without me asking."
     pause 0.5
-
-    hide muichiroquiet
 
     yn "...Yeah?"
     pause 0.4
@@ -128,11 +119,9 @@ label epilogue_scene:
     thought "...I'll try."
     pause 0.5
 
-    hide muichiroquiet
-
     yn "...I'll try."
     pause 0.6
-
+    hide muichiroquiet
     show muichirotalking at center_char
     mui "That's enough."
     hide muichirotalking

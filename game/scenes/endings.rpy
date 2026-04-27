@@ -145,7 +145,7 @@ label ending_truth:
     aizawa "..."
     pause 0.5
 
-    hide aizawa_quiet
+    hide aizawaquiet
     show aizawatalking at center_char
 
     aizawa "You know what happens."

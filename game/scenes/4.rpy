@@ -3,6 +3,8 @@ label arrival_scene:
     scene bg office at bg_fit
     with slow_dissolve
 
+    play music "nezu_theme.mp3" fadein 1.5
+
     show nezu at center_char
     with dissolve
 
@@ -26,7 +28,6 @@ label arrival_scene:
 
     menu:
         "We don't know.":
-            hide nezu
             yn "...We don't know."
             nezu "Fascinating. You say that with complete sincerity."
             thought "Because it's true."
@@ -36,27 +37,19 @@ label arrival_scene:
             thought "Probably worse."
 
         "Somewhere you've never heard of.":
-            hide nezu
             yn "...Somewhere you've never heard of."
-            show nezu at center_char
             nezu "I've heard of quite a lot of places."
-            hide nezu
             yn "Not this one."
-            show nezu at center_char
             nezu "That's either very honest or very evasive."
-            hide nezu
             thought "Both. Definitely both."
             thought "I'm very good at both."
 
         "Somewhere that doesn't exist here.":
-            hide nezu
             yn "...Somewhere that doesn't exist here."
-            show nezu at center_char
             nezu "Now that is interesting."
             nezu "Most people who don't want to answer say they don't remember."
             nezu "You said it doesn't exist."
             nezu "That's a very specific kind of answer."
-            hide nezu
             thought "He noticed. Of course he noticed."
             thought "He notices everything."
             thought "I hate that about him."
@@ -64,18 +57,18 @@ label arrival_scene:
 
         "Ask Muichiro.":
             hide nezu
+            show muichiroquiet at center_char
             yn "...Ask him."
+            hide muichiroquiet
             show muichirotalking at center_char
             mui "We were fighting a demon. Then we were here."
             mui "That's all I know."
             hide muichirotalking
             show nezu at center_char
             nezu "Concise. I appreciate that."
-            hide nezu
             thought "He gave the most accurate answer possible."
             thought "And somehow it sounds insane."
 
-    show nezu at center_char
     nezu "You'll stay here for now. Under observation."
     nezu "Aizawa will supervise."
     pause 0.3
@@ -101,8 +94,8 @@ label arrival_scene:
 
     menu:
         "We'll try.":
-            hide muichiroquiet
             yn "...We'll try."
+            hide muichiroquiet
             show nezu at center_char
             nezu "That's all I ask."
             hide nezu 
@@ -113,8 +106,8 @@ label arrival_scene:
             thought "I appreciate the participation trophy."
 
         "What does integrate mean exactly.":
-            hide muichiroquiet
             yn "...What does integrate mean exactly."
+            hide muichiroquiet
             show nezu at center_char
             nezu "Attend classes."
             nezu "Don't use your swords on students."
@@ -131,6 +124,7 @@ label arrival_scene:
             hide muichiroquiet
             show muichirotalking at center_char
             yn "...What if we can't."
+            hide muichirotalking
             show nezu at center_char
             nezu "Then we'll deal with that when it happens."
             nezu "I find it's better not to borrow trouble."
@@ -157,6 +151,7 @@ label arrival_scene:
     scene black
     with soft_dissolve
 
+    stop music fadeout 1.5
     pause 0.5
 
     thought "The classroom is on the third floor. Twenty seats."
@@ -168,6 +163,8 @@ label arrival_scene:
     scene bg classroom at bg_fit
     with slow_dissolve
 
+    play music "class_1a.mp3" fadein 2.0
+
     show aizawatalking at center_char
     with dissolve
 
@@ -176,22 +173,22 @@ label arrival_scene:
     aizawa "Don't make it weird."
     pause 0.4
     hide aizawatalking
-    show muiquiet at center_char
+    show muichiroquiet at center_char
     with dissolve
 
-    hide muiquiet
+    hide muichiroquiet
     show minatalking at center_char
     mina "Oh wow. Are those real swords?"
     hide minatalking
-    show denkitalking at center_char
+    show denki at center_char
     denki "That's so cool—"
-    hide denkitalking
+    hide denki
     show iidatalking at center_char
     iida "Please refrain from bringing weapons onto school grounds without prior authorization—"
     pause 0.3
     thought "Iida has been talking for thirty seconds."
     thought "Muichiro has not blinked once."
-    thought "I think Iida is kinda intimidated byt that."
+    thought "I think Iida is kinda intimidated by that."
     pause 0.4
     hide iidatalking
     show bakugotalking at center_char
@@ -205,11 +202,11 @@ label arrival_scene:
     thought "Exactly as loud as I knew he'd be."
     thought "...Don't let them see that you know them."
     pause 0.6
-    hide bakugoquiet
 
     yn "My name is [player_name]."
     pause 0.4
 
+    hide bakugoquiet
     show muichirotalking at center_char
     mui "Muichiro Tokito."
     mui "Mist Hashira."
@@ -221,10 +218,10 @@ label arrival_scene:
     pause 0.3
 
     hide kirishimatalking
-    show muichirotalking at right_char
+    show muichirotalking at center_char
     mui "I don't know what that means."
     hide muichirotalking
-    show muichiroquiet at right_char
+    show muichiroquiet at center_char
 
     thought "He genuinely doesn't."
     thought "I watched him stare at a vending machine for forty seconds yesterday."
@@ -261,7 +258,6 @@ label arrival_scene:
             thought "I owe Aizawa one."
 
         "Something like a quirk.":
-            hide dekuquiet
             yn "...Something like a quirk. But older. And it costs more."
             show dekutalking at center_char
             izuku "Costs more how?"
@@ -271,8 +267,8 @@ label arrival_scene:
             thought "That scars are a curriculum."
             thought "That you breathe until your lungs feel like they're tearing"
             thought "and then you breathe harder."
-            hide dekuquiet
             yn "...It's hard to explain."
+            hide dekuquiet
             show dekutalking at center_char
             izuku "I'd love to hear it sometime."
             hide dekutalking
@@ -283,10 +279,10 @@ label arrival_scene:
 
         "Let Muichiro answer.":
             hide dekuquiet
-            show muichirotalking at center_char
+            show muichiroquiet at center_char
             yn "...Ask him."
             hide muichiroquiet
-            show muitalking at center_char
+            show muichirotalking at center_char
             mui "Total Concentration Breathing."
             mui "You push oxygen through your entire body."
             mui "It enhances speedand strength."
@@ -316,6 +312,8 @@ label arrival_scene:
 
     hide aizawaquiet
 
+    stop music fadeout 2.0
+
     scene bg dorms_hallway at bg_fit
     with soft_dissolve
 
@@ -331,64 +329,50 @@ label arrival_scene:
 
     menu:
         "Instinct.":
-            hide tsuyu
             yn "...Instinct."
-            show tsuyu at center_char
             tsuyu "You do that a lot. The instinct thing."
             tsuyu "It doesn't sound like instinct."
             tsuyu "It sounds like you already know what's going to happen."
-            hide tsuyu
             thought "She's right. She's completely right."
             thought "Flat. Honest. Without cruelty."
             thought "Which somehow makes it worse."
             thought "I'd prefer cruelty. Cruelty I can dismiss."
 
         "I read people well.":
-            hide tsuyu
             yn "...I read people well."
-            show tsuyu at center_char
             tsuyu "Ribbit. That's not what that looked like."
-            hide tsuyu
             thought "She said ribbit."
             thought "And then immediately called me out."
             thought "I respect that absurdity."
 
         "Would you believe me if I told you.":
-            hide tsuyu
             yn "...Would you believe me if I told you?"
-            show tsuyu at center_char
             tsuyu "Probably. I believe most things. Ribbit."
-            hide tsuyu
             thought "I almost tell her. Right there. In the hallway."
             thought "But I don't."
             thought "Because I've already changed too much."
             yn "...Maybe later."
-            show tsuyu at center_char
             tsuyu "Okay. I'll be here."
-            hide tsuyu
             thought "She means it. She always means it."
             thought "That's either comforting or terrifying."
             thought "Both."
 
         "I don't know how to explain it.":
-            hide tsuyu
             yn "...I don't know how to explain it."
-            show tsuyu at center_char
             tsuyu "That's okay. You don't have to."
             tsuyu "I just wanted you to know I noticed."
-            hide tsuyu
             thought "No pressure. Just — I noticed."
             thought "I don't know what to do with kindness that doesn't ask for anything."
             thought "It makes me want to sit down."
 
-
+    hide tsuyu
     scene bg training_ground at bg_fit
     with soft_dissolve
 
     play sound "wind.wav" fadein 1.0
     pause 0.4
 
-    show bakugotalking at left_char
+    show bakugotalking at center_char
     with dissolve
 
     bakugo "Hey."
@@ -425,19 +409,19 @@ label arrival_scene:
             thought "He would not take that well."
 
         "Okay.":
-            hide bakugoquiet
             yn "...Okay."
+            hide bakugoquiet
             show bakugotalking at center_char
             bakugo "That's it? Just okay?"
-            hide bakugotalking
             yn "What do you want me to say?"
+            hide bakugotalking
             show bakugotalking at center_char
             bakugo "Something that makes sense."
             hide bakugotalking
             show bakugoquiet at center_char
             thought "I don't have that. I haven't had that in a long time."
-            hide bakugoquiet
             yn "...I'll let you know when I find it."
+            hide bakugoquiet
             show bakugotalking at center_char
             bakugo "Tch."
             hide bakugotalking
@@ -446,13 +430,15 @@ label arrival_scene:
             thought "Somehow."
 
         "You're not wrong to be suspicious.":
-            hide bakugoquiet
             yn "...You're not wrong to be suspicious."
+            hide bakugoquiet
             show bakugotalking at center_char
             bakugo "I know I'm not. So what is it."
-            show bakugotalking at center_char
-            yn "...I can't tell you. Not yet."
             hide bakugotalking
+            show bakugoquiet at center_char
+            yn "...I can't tell you. Not yet."
+            hide bakugoquiet
+            show bakugotalking at center_char
             bakugo "Not yet. So there's a yet."
             hide bakugotalking
             show bakugoquiet at center_char
@@ -461,17 +447,21 @@ label arrival_scene:
             thought "It's annoying."
 
         "I could ask you the same thing.":
-            hide bakugoquiet
             yn "...I could ask you the same thing."
+            hide bakugoquiet
             show bakugotalking at center_char
             bakugo "What."
             hide bakugotalking
+            show bakugoquiet at center_char
             yn "You watch everyone. You catalogue weaknesses."
             yn "You're always three steps ahead."
+            hide bakugoquiet
             show bakugotalking at center_char
             bakugo "That's called being prepared."
             hide bakugotalking
+            show bakugoquiet at center_char
             yn "So is what I do."
+            hide bakugoquiet
             show bakugotalking at center_char
             bakugo "Tch."
             hide bakugotalking
@@ -480,14 +470,11 @@ label arrival_scene:
             thought "The way you walk when you want someone to know you're thinking about them."
             thought "He would hate that I noticed that."
 
-    hide bakugo
+    hide bakugoquiet
     scene black
     with soft_dissolve
 
     thought "He's not wrong to watch me. I would watch me too."
-    pause 0.6
-
-    
     pause 0.6
 
     jump dorms_scene

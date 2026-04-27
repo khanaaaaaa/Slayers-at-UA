@@ -367,13 +367,13 @@ screen main_menu():
 
     tag menu
 
-    add gui.main_menu_background
+    add "gui/main_menu_bg.png" xysize (config.screen_width, config.screen_height) fit "cover"
 
-    add Solid("#00000088")
+    add Solid("#00000077")
 
     vbox:
         xalign 0.5
-        yalign 0.42
+        yalign 0.22
         spacing 0
 
         text "SLAYERS AT UA":
@@ -397,7 +397,7 @@ screen main_menu():
     vbox:
         style_prefix "navigation"
         xalign 0.5
-        yalign 0.72
+        yalign 0.68
         spacing 14
 
         if main_menu:

@@ -19,10 +19,12 @@ label dorms_scene:
     show muichirotalking at center_char
     mui "...This place is strange."
     hide muichirotalking
+    show muichiroquiet at center_char
 
     yn "Yeah."
     pause 0.3
 
+    hide muichiroquiet
     show muichirotalking at center_char
     mui "...Do you know where we are?"
     hide muichirotalking
@@ -33,11 +35,10 @@ label dorms_scene:
     thought "That's been happening a lot lately."
     pause 0.5
 
-    hide muichiroquiet
-
     yn "...I don't think so."
     pause 0.4
 
+    hide muichiroquiet
     show muichirotalking at center_char
     mui "You hesitated."
     hide muichirotalking
@@ -55,9 +56,7 @@ label dorms_scene:
 
     thought "He's right. Because I know too much."
     thought "And I don't know how."
-    thought "And if I just said things I'd say something like"
-    thought "'you're going to call me Sparrow in about six months'"
-    thought "and that would be a lot."
+ 
     pause 0.6
 
     yn "...Sorry."
@@ -96,10 +95,6 @@ label dorms_scene:
     show muichiroquiet at center_char
 
     thought "Yes, in the forest. Every day for weeks."
-    thought "You told me you'd remember my name... you didn't."
-    thought "But you're starting to."
-    thought "Which is either progress or a coincidence."
-    thought "I'm choosing to believe it's progress."
     pause 0.6
 
     yn "...I don't think so."
@@ -124,11 +119,10 @@ label dorms_scene:
     play sound "city_ambience.wav" fadein 1.0
     pause 0.5
 
-
     thought "Training starts today."
     thought "Someone's going to challenge him. The loud one with the red hair."
     thought "He'll say something about being manly."
-    thought "...Why do I know that."
+    thought "...Wait, why do I know that?"
     pause 0.6
 
     show kirishimatalking at center_char
@@ -139,7 +133,7 @@ label dorms_scene:
     pause 0.3
 
     hide kirishimatalking
-    show kirishimaquiet with center_char
+    show kirishimaquiet at center_char
 
     thought "...See. I knew."
     thought "I always know. And I don't know why."
@@ -161,7 +155,7 @@ label dorms_scene:
 
     yn "...It's a breathing form. We were trained in it."
     pause 0.3
-    hide dekuqiet
+    hide dekuquiet
     show dekutalking at center_char
 
     izuku "Trained where?"
@@ -172,10 +166,10 @@ label dorms_scene:
 
     thought "Good question."
     thought "I know the answer. But it feels like something I read."
-    thought "...Read. Where."
-    thought "On a screen."
-    thought "What's a screen."
-    thought "I keep doing that."
+    thought "Read... where."
+    thought "On a screen?"
+    thought "What's a screen?"
+    thought "I keep doing that..."
     pause 0.6
 
     yn "...Somewhere far from here."
@@ -202,11 +196,10 @@ label dorms_scene:
     aizawa "You moved before it happened."
     pause 0.3
 
-    hide aizawatalking
-
     yn "...Instinct."
     pause 0.3
 
+    hide aizawaquiet
     show aizawatalking at center_char
 
     aizawa "You also knew Todoroki's left side runs hot."
@@ -214,11 +207,10 @@ label dorms_scene:
     pause 0.3
 
     hide aizawatalking
+    show aizawaquiet at center_char
 
     yn "...I read people well."
     pause 0.3
-
-    show aizawaquiet at center_char
 
     aizawa "..."
 
@@ -235,12 +227,9 @@ label dorms_scene:
     thought "I've been trying to figure out how to say that for days."
     pause 0.6
 
-    hide aizawaquiet
 
     yn "...I don't know where I'm from."
     pause 0.4
-
-    show aizawaquiet at center_char
 
     aizawa "..."
 
@@ -337,22 +326,22 @@ label rooftop_scene:
     yn "...I don't know."
     pause 0.4
 
-    hide muiquiet
-    show muitalking at center_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "You're lying."
-    hide muitalking
-    show muiquiet at center_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     yn "..."
     pause 0.4
 
-    hide muiquiet
-    show muitalking at center_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "You do that too. You lie. But not well."
     mui "...Why?"
-    hide muitalking
-    show muiquiet at center_char
-    thoguht "Because I know things I shouldn't."
+    hide muichirotalking
+    show muichiroquiet at center_char
+    thought "Because I know things I shouldn't."
     thought "Because if I told you the truth you'd look at me like I'm a monster."
     thought "And I'm not ready for that."
     pause 0.6
@@ -360,37 +349,28 @@ label rooftop_scene:
     yn "...I don't know how to answer that."
     pause 0.4
 
-    mui "..."
-    hide muichiroquiet
-    show muichirotalking at center_char
-    mui "You're fading."
-    hide muichirotalking
-    show muichiroquiet at center_char
-
-    hide muichiroquiet
 
     yn "...What?"
     pause 0.3
 
-    show muitalking at center_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "Your hand. It's... translucent."
-    hide muitalking
-    show muiquiet at center_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
-    thought "No. No no no. Not yet. I'm not ready."
+    thought "No no no... I'm not ready."
     thought "I haven't even figured out the vending machine situation."
     pause 0.6
 
-    hide muichiroquiet
-
     yn "...I'm fine."
     pause 0.3
-
+    hide muichiroquiet
     show muichirotalking at center_char
     mui "You're not."
     mui "...What's happening to you?"
     hide muichirotalking
-    show muiciroquiet at center_char
+    show muichiroquiet at center_char
 
     thought "I'm being forgotten."
     thought "If no one remembers me — I stop existing."

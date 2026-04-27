@@ -3,6 +3,8 @@ label mission_scene:
     scene bg forest_night at bg_fit
     with slow_dissolve
 
+    play music "kny_battle.mp3" fadein 2.5
+
     play sound "wind.wav" fadein 2.0
     pause 0.6
 
@@ -18,6 +20,7 @@ label mission_scene:
     thought "Back when he still laughed."
     pause 0.8
 
+    show demon2 at center_charr
     with dissolve
 
     yn "Moon Breathing..."
@@ -26,12 +29,13 @@ label mission_scene:
 
     with vpunch
     pause 0.3
+    hide demon2
 
     thought "Too clean. My body moved before I could even think."
     thought "...Just like before."
     pause 0.6
 
-    show muiquiet at left_char
+    show demon2 at center_charr
     with dissolve
 
     demon2 "Ara..."
@@ -43,6 +47,7 @@ label mission_scene:
     demon2 "...as if you slipped out of time and forgot how to return."
     pause 0.4
 
+    thought "That demon didn't die??"
     thought "...Stop. Don't listen."
     pause 0.4
 
@@ -62,11 +67,6 @@ label mission_scene:
             demon2 "Oh. It speaks. And it's angry."
             demon2 "Good. Anger is honest."
 
-        "...{i}(Look at Muichiro.){/i}":
-            thought "He's not reacting. He never reacts to things like this."
-            thought "That used to comfort me. Now I don't know what it means."
-            demon2 "Ah. You looked at him. Instinct. Even now."
-
         "...It's not regret. It's something worse.":
             yn "It's not regret."
             demon2 "Oh? Then what is it."
@@ -77,39 +77,45 @@ label mission_scene:
 
     play sound "mist.wav" fadein 0.5
 
-    hide muiquiet
-    show muitalking at left_char
+    hide demon2
+    show muichirotalking at center_char
     mui "Mist Breathing..."
     mui "...Seventh Form."
     mui "...Obscuring Clouds."
-    hide muitalking
-    show muiquiet at left_char
+    hide muichirotalking
+    show muichiroquiet at center_char
+
+    hide muichirotalking
+    show demon2 at center_charr
 
     with hpunch
     pause 0.4
+
+    hide demon2
+    show muichiroquiet at center_char
 
     thought "He moved without hesitation. He always does."
     thought "Even now. Even without the memories."
     thought "His body remembers what his mind won't."
     pause 0.6
 
-    hide muiquiet
-    show muitalking at left_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "You're still alive."
-    hide muitalking
-    show muiquiet at left_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     thought "Not surprised."
     pause 0.3
 
-    hide muiquiet
-    show muitalking at left_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "You got slower."
     mui "Thought you would die eventually."
     mui "You were always slower to adapt."
     mui "...What was your name again?"
-    hide muitalking
-    show muiquiet at left_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     thought "...Right. This is who he is now."
     pause 0.5
@@ -117,41 +123,38 @@ label mission_scene:
     menu:
         "...[player_name]. Same as it's always been.":
             yn "...[player_name]. Same as it's always been."
-            hide muiquiet
-            show muitalking at left_char
+            hide muichiroquiet
+            show muichirotalking at center_char
             mui "Right. You used to dislike it when I forgot."
-            hide muitalking
-            show muiquiet at left_char
+            hide muichirotalking
+            show muichiroquiet at center_char
             thought "Used to. I still do. I just stopped showing it."
 
         "...Does it matter to you?":
             thought "He asked. Like it's a small thing. Like it doesn't cost anything."
             yn "...Does it matter to you?"
-            hide muiquiet
-            show muitalking at left_char
+            hide muichiroquiet
+            show muichirotalking at center_char
             mui "Probably not. But I asked."
-            hide muitalking
-            show muiquiet at left_char
+            hide muichirotalking
+            show muichiroquiet at center_char
             yn "...[player_name]."
             thought "He asked. That's something. Even if he won't remember."
 
         "...[player_name]. You used to say it differently.":
             yn "...[player_name]. You used to say it differently."
-            hide muiquiet
-            show muitalking at left_char
+            hide muichiroquiet
+            show muichirotalking at center_char
             mui "...How."
-            hide muitalking
-            show muiquiet at left_char
+            hide muichirotalking
+            show muichiroquiet at center_char
             thought "Softer. Like it was something you were careful with."
-            thought "Like it was made of something that could break."
 
     yn "Well... you never forgot before."
 
-    hide muiquiet
-    show muitalking at left_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "..."
-    hide muitalking
-    show muiquiet at left_char
 
     thought "No answer. As always."
     pause 0.4
@@ -159,60 +162,62 @@ label mission_scene:
     yn "You used to call me something."
     yn "...Sparrow."
 
-    hide muiquiet
-    show muitalking at left_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "...Why would I call anyone that?"
-    hide muitalking
-    show muiquiet at left_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     pause 0.5
 
     menu:
         "Because I moved like one. Small. Hard to catch.":
             yn "Because I moved like one. Small. Hard to catch."
-            hide muiquiet
-            show muitalking at left_char
+            hide muichiroquiet
+            show muichirotalking at center_char
             mui "That doesn't sound like something I'd say."
-            hide muitalking
-            show muiquiet at left_char
+            hide muichirotalking
+            show muichiroquiet at center_char
             thought "It was exactly something he'd say. Once."
             thought "When he still noticed things like that."
 
         "Because you said sparrows always come back. Even when they shouldn't.":
             yn "Because you said sparrows always come back."
             yn "Even when they shouldn't."
-            hide muiquiet
-            show muitalking at left_char
+            hide muichiroquiet
+            show muichirotalking at center_char
             mui "...I said that?"
-            hide muitalking
-            show muiquiet at left_char
+            hide muichirotalking
+            show muichiroquiet at center_char
             thought "He's not denying it. He's just sitting with it."
             thought "Like it almost fits."
 
         "I don't know. You just started one day and never stopped.":
             yn "I don't know. You just started one day and never stopped."
-            hide muiquiet
-            show muitalking at left_char
+            hide muichiroquiet
+            show muichirotalking at center_char
             mui "That sounds inefficient."
-            hide muitalking
-            show muiquiet at left_char
+            hide muichirotalking
+            show muichiroquiet at center_char
             thought "He used to say that about everything he didn't understand."
             thought "Inefficient. Like feelings were a logistics problem."
             thought "Like love was something you could optimize."
 
         "It doesn't matter. You won't remember it anyway.":
             yn "...It doesn't matter. You won't remember it anyway."
-            hide muiquiet
-            show muitalking at left_char
+            hide muichiroquiet
+            show muichirotalking at center_char
             mui "...That was cruel."
-            hide muitalking
-            show muiquiet at left_char
+            hide muichirotalking
+            show muichiroquiet at center_char
             thought "I know. I said it anyway."
             thought "Because I'm tired. Because it's true."
             thought "Because sometimes the truth is the cruelest thing you have."
 
     thought "Of course. To him now — it probably is."
     pause 0.6
+    hide muichiroquiet
+    show demon2 at center_charr
 
     demon2 "How cruel."
     demon2 "To stand before someone who once held your entire world."
@@ -222,6 +227,8 @@ label mission_scene:
     demon2 "It rots. And eventually..."
     demon2 "...it forgets why it ever held on."
     pause 0.4
+    hide demon2
+    show muichirotalking at center_char
 
     menu:
         "...{i}(Don't move. Don't breathe. Don't let it in.){/i}":
@@ -248,11 +255,11 @@ label mission_scene:
             thought "..."
             thought "Nothing. Or maybe something. I can't tell anymore."
 
-    hide muiquiet
-    show muitalking at left_char
+    hide muichiroquiet
+    show muichirotalking at center_char
     mui "Shut up."
-    hide muitalking
-    show muiquiet at left_char
+    hide muichirotalking
+    show muichiroquiet at center_char
 
     thought "He's angry. That's new..."
     thought "Or maybe it isn't. Maybe I just never saw it before."
@@ -264,8 +271,10 @@ label mission_scene:
     pause 0.4
 
     with vpunch
-
+    scene black
+    with hard_cut
     demon2 "Fall."
+    
     demon2 "...together."
     pause 0.4
 
@@ -273,23 +282,15 @@ label mission_scene:
 
     yn "Muichiro—!"
 
-    hide muiquiet
-    show muitalking at left_char
     mui "...Don't."
     mui "...call me like you used to."
-    hide muitalking
-    show muiquiet at left_char
 
     pause 0.5
 
     menu:
         "...Like I know you. Because I do.":
             yn "...Like I know you. Because I do."
-            hide muiquiet
-            show muitalking at left_char
             mui "...You don't. Not anymore."
-            hide muitalking
-            show muiquiet at left_char
             thought "He's right."
             thought "The person I knew is somewhere underneath this one."
             thought "And I don't know how deep."
@@ -303,11 +304,7 @@ label mission_scene:
 
         "...Muichiro.":
             yn "...Muichiro."
-            hide muiquiet
-            show muitalking at left_char
             mui "..."
-            hide muitalking
-            show muiquiet at left_char
             thought "He doesn't say anything."
             thought "But he doesn't look away either."
             thought "And for a moment — just a moment —"
@@ -316,20 +313,14 @@ label mission_scene:
 
         "...I'm sorry. I know you don't want me to.":
             yn "...I'm sorry. I know you don't want me to."
-            hide muiquiet
-            show muitalking at left_char
             mui "...Then why."
-            hide muitalking
-            show muiquiet at left_char
             thought "Because I needed to hear it. Even if you didn't."
             thought "Some things you say for yourself."
             thought "Not for the person listening."
 
-    thought "...Too late."
-    thought "For a moment — his eyes changed."
-    thought "Like we returned... to that forest."
-    thought "And I let it slip away again."
     pause 0.8
+
+    stop music fadeout 2.0
 
     scene black
     with Fade(0.3, 0.0, 0.8, color="#ffffff")

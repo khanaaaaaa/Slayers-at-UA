@@ -6,12 +6,10 @@ label prologue_start:
     play sound "wind_soft.wav" fadein 2.0
 
     thought "There is someone I know everything about."
-    thought "His name. His breathing form."
     thought "The way he tilts his head when he's deciding whether to care."
     thought "But he doesn't remember me."
     thought "..."
-    thought "Which is fine. I think."
-    thought "I don't remember much either."
+    thought "Which is kinda insulting."
     pause 1.0
 
     scene bg forest_sunset at bg_fit
@@ -36,8 +34,6 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    thought "Don't say his name. You're not supposed to know it yet."
-    pause 0.6
 
     hide muiquiet
     show muitalking at center_char
@@ -133,11 +129,11 @@ label prologue_start:
     scene black
     with flash_white
 
-    thought "—bright lights—"
-    thought "—a building, glass and steel—"
-    thought "—someone calling my name—"
-    thought "—not [player_name]—"
-    thought "—something else—"
+    thought "—Bright lights—"
+    thought "—A building, glass and steel—"
+    thought "—Someone calling my name—"
+    thought "—Not [player_name]—"
+    thought "—Something else—"
     pause 0.3
 
     scene bg forest_sunset at bg_fit
@@ -274,14 +270,7 @@ label prologue_start:
     thought "And I still can't stop it."
     pause 1.0
 
-    show yuichiroquiet at center_char
-    with dissolve
-
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "...So this is where you've been disappearing to."
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -289,13 +278,9 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "You're not subtle."
     yuichiro "You leave at the same time every day."
     yuichiro "...And come back oddly calm. Talking to someone?"
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -303,11 +288,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "...Or staring again? Who's the ghost?"
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -315,11 +296,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "Mm. ...You gave them that look."
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -327,20 +304,12 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "Like you're trying to memorize them before they're gone."
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
     mui "..."
     pause 0.6
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "...You like them?"
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -348,11 +317,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "So you {i}do{/i} think about it."
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -360,10 +325,7 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "...You're obvious."
-    hide yuichirotalking
 
     stop music fadeout 3.0
     play sound "wind_hollow.wav" fadein 1.5
@@ -381,15 +343,11 @@ label prologue_start:
     play sound "distant_scream.wav"
     pause 0.5
 
-    show yuichiroquiet at center_char
+    show muiquiet at center_char
 
     mui "...?"
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "Stay here. Don't move."
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
     hide muiquiet
     show muitalking at center_char
@@ -397,99 +355,57 @@ label prologue_start:
     hide muitalking
     show muiquiet at center_char
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
     yuichiro "...Inside."
-    hide yuichirotalking
 
     scene black
-    with hard_cut
+    with Fade(2.5, 0.5, 2.0)
 
-    play sound "fire_crackle.wav" fadein 0.8
+    play sound "fire_crackle.wav" fadein 2.0
 
-    thought "Fire. I know this smell."
-    thought "Not from training. From somewhere else."
-    thought "...Don't."
+    thought "It's dark."
+    pause 0.8
+    thought "I can't see anything."
     pause 0.6
-
-    show muiquiet at center_char
-    with dissolve
-
-    hide muiquiet
-    show muitalking at center_char
-    mui "...It smells strange."
-    hide muitalking
-    show muiquiet at center_char
-
-    show yuichiroquiet at center_char
-    with dissolve
-
-    hide yuichiroquiet
-    show yuichirotalking at center_char
-    yuichiro "...Don't look."
-    hide yuichirotalking
-    show yuichiroquiet at center_char
-
-    hide muiquiet
-    show muitalking at center_char
-    mui "...Why?"
-    hide muitalking
-    show muiquiet at center_char
-
-    hide yuichiroquiet
-    show yuichirotalking at center_char
-    yuichiro "...Just don't."
-    hide yuichirotalking
-    show yuichiroquiet at center_char
-
-    thought "...But he does."
-    pause 0.4
+    thought "...But I can smell it."
+    pause 1.0
+    thought "Something burning. Something else underneath that."
+    pause 0.8
+    thought "Something that doesn't belong in a house."
+    pause 1.2
+    thought "Yuichiro is ahead of me. I can hear him stop."
+    pause 0.8
+    thought "He doesn't say anything."
+    pause 0.6
+    thought "That's worse than if he had."
+    pause 1.0
 
     play sound "heartbeat.wav"
+    pause 0.5
 
-    thought "Red. That's where it comes from."
-    pause 0.4
-
-    scene black
-    with flash_white
-
-    thought "—a kitchen—"
-    thought "—something burning—"
-    thought "—my mother's voice, sharp—"
-    thought "—my own hands—"
-    thought "—something wrong with my hands—"
-    pause 0.3
-
-    scene black
-    with hard_cut
-
-    thought "No. Not that. Not yet."
+    thought "My eyes adjust."
     pause 0.8
-
-    show muiquiet at center_char
-    with dissolve
-
-    show yuichiroquiet at center_char
-    with dissolve
-
-    mui "..."
-    mui "...They're not moving."
+    thought "I wish they hadn't."
+    pause 1.2
+    thought "...Something on the floor."
+    pause 0.6
+    thought "Two somethings."
+    pause 0.6
+    thought "They're not moving."
+    pause 1.0
+    thought "They're not moving."
     pause 0.4
+    thought "Why aren't they—"
+    pause 1.5
+    thought "..."
+    pause 1.0
 
-    hide yuichiroquiet
-    show yuichirotalking at center_char
-    yuichiro "...I said don't look."
-    hide yuichirotalking
-    show yuichiroquiet at center_char
 
-    hide muiquiet
-    show muitalking at center_char
+    yuichiro "...Don't look."
     mui "...Why aren't they moving?"
-    hide muitalking
-    show muiquiet at center_char
+    pause 0.6
 
-    hide yuichiroquiet
-    show yuichiroquiet at center_char
+    yuichiro "..."
+    pause 0.8
     yuichiro "Because they're—"
 
     stop sound
@@ -504,44 +420,24 @@ label prologue_start:
     thought "Something with teeth."
     pause 1.0
 
-    scene bg forest_night at bg_fit
-    with slow_dissolve
-
-    play sound "low_growl.wav" fadein 1.5
-
     thought "It wasn't just an attack. ...Something was still there."
     pause 0.6
 
-    show muiquiet at center_char
-    with dissolve
-
-    hide muiquiet
-    show muitalking at center_char
     mui "..."
     mui "...You told me to run."
     mui "...I didn't."
     mui "...So now what?"
-    hide muitalking
-    show muiquiet at center_char
-
+    
     menu:
         "...I don't know. I never do.":
             yn "...I don't know. I never do."
-            hide muiquiet
-            show muitalking at center_char
             mui "...That's honest."
-            hide muitalking
-            show muiquiet at center_char
             thought "He doesn't say it like a compliment."
             thought "He says it like a fact."
 
         "...We survive. Like we always do.":
             yn "...We survive. Like we always do."
-            hide muiquiet
-            show muitalking at center_char
             mui "...You say that like it's simple."
-            hide muitalking
-            show muiquiet at center_char
             thought "It used to be."
             thought "Before I knew how it ended."
             thought "...How do I know how it ends."
@@ -549,10 +445,7 @@ label prologue_start:
         "...If something feels wrong — run.":
             yn "...If something feels wrong..."
             yn "...run."
-            hide muiquiet
-            show muitalking at center_char
             mui "...Too late."
-            hide muitalking
             thought "That's when it starts."
             thought "Not the memory. The forgetting."
             thought "His. And mine."
