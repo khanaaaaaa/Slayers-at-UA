@@ -1,5 +1,8 @@
 # Slayers At UA
 
+Demo: https://khanaaaaaa.itch.io/slayers-in-ua
+Click F for fullscreen.
+
 ## What It Is
 A fanmade visual novel that crosses Demon Slayer (Kimetsu no Yaiba) with My Hero Academia. You play as someone who knows both worlds as you read the mangas, and wake up inside it. First, Demon Slayer and then My Hero Academia. The story follows Muichiro Tokito and you as you two navigate UA High School after being pulled from the Demon Slayer world.
 
